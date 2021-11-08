@@ -1,0 +1,738 @@
+@font-face {
+  font-family: 'GmarketSansBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-family: 'Noto Sans KR', sans-serif;
+
+.wrap {
+  width: 1900px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif
+}
+
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+
+}
+
+/* 해더 */
+header {
+  height: 140px;
+  background: #F6F5F0;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav img {
+  width: 300px;
+  height: 83px;
+  margin-top: 40px;
+}
+
+.nav .bar .topmenu {
+  display: flex;
+  margin-right: 65px;
+  flex-direction: row-reverse;
+
+}
+
+.nav .bar .topmenu>li {
+  margin-top: 20px;
+  padding-left: 20px;
+
+}
+
+.nav .bar .topmenu>li>a {
+  text-decoration: none;
+  color: rgb(56, 29, 4);
+  font-weight: 500;
+  font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+/* mein */
+.nav .bar #menulist {
+  display: flex;
+  width: 900px;
+  justify-content: space-around;
+  padding-left: 50px;
+}
+
+
+.nav .bar #menulist>li {
+  width: 300px;
+  height: 30px;
+  display: inline-block;
+  margin-top: 40px;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+
+
+
+.nav .bar #menulist>li>a {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(56, 29, 4);
+}
+
+/* 메뉴 호버 */
+
+ul#menulist>li>a:first-child:hover {
+  color: rgb(56, 29, 4);
+  font-weight: 900;
+}
+
+ul#menulist li>a:hover {
+  color: rgb(56, 29, 4);
+  font-weight: 900;
+}
+
+
+
+ul#menulist li:hover {
+  border-bottom: 3px solid #cf9578;
+  box-sizing: border-box;
+  z-index: 999;
+
+}
+
+ul#menulist>li:hover .sub {
+  display: block;
+
+}
+
+.lazy{
+  /* width: 1900px;
+  height: 800px;
+  margin: 0 auto; */
+}
+
+
+/* menulist 호버시 보여질 하단 메뉴 */
+
+.sub {
+  font-family: 'Roboto', sans-serif background-color: black;
+  display: none;
+  position: absolute;
+}
+
+.sub>li {
+  height: 40px;
+  width: 180px;
+  box-sizing: border-box;
+  background: #F6F5F0;
+  padding: 15px 0;
+
+}
+
+.sub>li>a {
+  text-decoration: none;
+  color: #1E2739;
+  font-weight: 400;
+
+}
+
+/* main */
+.main {
+  position: relative;
+}
+
+.main >img:nth-child(2) {
+  position: absolute;
+  top: 168px;
+  left: 773px;
+}
+
+.main >img:nth-child(3) {
+  position: absolute;
+  top: 250px;
+  right: 350px;
+}
+
+.main img:nth-child(4) {
+  position: absolute;
+  top: 200px;
+  right: 220px;
+}
+
+/* main hover */
+.main img:nth-child(2):hover {
+  transform: scale(1.1);
+}
+
+.main img:nth-child(3):hover {
+  transform: scale(1.1);
+}
+
+.main img:nth-child(4):hover {
+  transform: scale(1.1);
+}
+
+
+
+
+.main .btn >a {
+  position: absolute;
+  top: 300px;
+  left: 350px;
+
+  display: inline-block;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 3px;
+  color: #F8EEBF;
+  border-radius: 0;
+  padding: 18px 80px 20px;
+  transition: all 0.7s ease-out;
+  background: linear-gradient(270deg, #F8EEBF, #A5572F, rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  text-decoration: none;
+  margin: 0.625rem;
+  border: 1px solid rgba(223, 190, 106, 0.3);
+}
+
+.main .btn a:hover {
+  font-weight: 400;
+  color: #A5572F;
+  border: 1px solid rgba(223, 190, 106, 0);
+  color: white;
+  background-position: 99% 50%;
+}
+
+
+
+/* main_botton / 공지사항 프로모션 바 */
+
+.main_bottom {
+  font-family: 'Roboto', sans-serif;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.main_bottom .btn:nth-child(1) {
+  width: 950px;
+  height: 80px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 350px;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
+.main_bottom .btn:nth-child(2) {
+  width: 950px;
+  height: 80px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 300px;
+  box-sizing: border-box;
+  font-weight: 900;
+
+}
+
+.main_bottom .btn:nth-child(1) img {
+  margin-left: 111px;
+  display: none;
+}
+
+.btn:nth-child(1):hover>a img {
+  display: block;
+}
+
+.main_bottom .btn:nth-child(2) img {
+  margin-left: 111px;
+  display: none;
+}
+
+.btn:nth-child(2):hover>a img {
+  display: block;
+}
+
+/* 메가쿠폰 */
+
+.coupon {
+  font-family: 'Roboto', sans-serif;
+  height: 351px;
+  background: #1E2739;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-left: 350px;
+  box-sizing: border-box;
+
+}
+
+.coupon img:nth-child(1) {
+
+  margin-right: 100px;
+}
+
+.coupon .text p:nth-child(1) {
+  font-size: 35px;
+  font-weight: 900;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+}
+
+.coupon .text>p:nth-child(1)>span {
+  color: #FAD000;
+}
+
+.coupon .text p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 1px;
+  margin-bottom: 35px;
+}
+
+.coupon .text p:nth-child(3) {
+  margin-left: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.coupon .btn {
+  margin-top: 150px;
+  margin-left: 100px;
+  font-size: 20px;
+}
+
+/* 버튼 상세 */
+.coupon .btn a {
+  font-size: 15px;
+  display: inline-block;
+  background: transparent;
+  text-transform: uppercase;
+  border: 1px solid #F8EEBF;
+  letter-spacing: 3px;
+  color: #F8EEBF;
+  padding: 18px 30px 20px;
+  transition: all 0.7s ease-out;
+  background-position: 1% 50%;
+  background-size: 200% 200%;
+  text-decoration: none;
+  border: 1px solid rgba(223, 190, 106, .2);
+}
+
+.coupon .btn a:hover {
+  font-weight: 400;
+  color: #A5572F;
+  border: 1px solid rgba(223, 190, 106, 100);
+  color: white;
+}
+
+
+
+/* 영상 */
+.video {
+  font-family: 'Roboto', sans-serif;
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+video {
+  height: 300px;
+  width: 832px;
+  /* object-fit: fill; */
+}
+
+.video .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.video .text>p:nth-child(1) {
+  line-height: 50px;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 25px;
+  letter-spacing: 3px;
+  text-align: end;
+}
+
+.video .text>p:nth-child(2) {
+  text-align: right;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -1.5px;
+  margin-bottom: 35px;
+}
+
+/* 버튼 상세 */
+.video .text .btn>a {
+  width: 100px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 15px;
+  display: inline-block;
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: black;
+  padding: 10px 20px;
+  transition: all 0.7s ease-out;
+  background-position: 20% 20%;
+  background-size: 200% 100%;
+  text-decoration: none;
+  border: 2px solid rgba(223, 190, 106, .2);
+}
+
+.video .btn a:hover {
+  font-weight: 900;
+  border: 2px solid rgba(223, 190, 106, 100);
+  color: rgba(223, 190, 106, 100);
+}
+
+
+
+/* map */
+.map {
+  font-family: 'Roboto', sans-serif;
+  height: 400px;
+  background: #FAD000;
+  display: flex;
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.map .text {
+  margin-left: 350px;
+}
+
+.map .text>p:nth-child(1) {
+  line-height: 60px;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  text-align: left;
+}
+.map .text>p:nth-child(1) >span{
+  color: white;
+}
+
+.map .text p:nth-child(2) {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -1.5px;
+  margin-bottom: 35px;
+}
+
+.map .img>img:nth-child(1) {
+  position: absolute;
+  bottom: -80px;
+  right: 700px;
+  animation-name: move1;
+  animation-direction: alternate;
+  animation-duration: 5s;
+  transition: ease-in-out;
+  animation-iteration-count: infinite;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+@keyframes move1{
+  from{ transform:translateX(0);
+    border: 8px solid rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    
+  }
+
+  to{ transform: scale(1.1) translateX(70px) ;
+      
+      border: 8px solid white;
+      box-sizing: border-box;
+    
+  }
+}
+
+.map .img>img:nth-child(2) {
+  position: absolute;
+  bottom: 60px;
+  right: 300px;
+  animation-name: move2;
+  transition: ease-in-out;
+  animation-direction: alternate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+@keyframes move2{
+  from{ transform:translateX(0);
+    border: 4px solid rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    
+  }
+
+  to{ transform:translateX(-30px);
+    border: 4px solid white;
+    box-sizing: border-box;
+  }
+}
+
+/* 버튼 상세 */
+.map .text .btn>a {
+  width: 100px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 15px;
+  display: inline-block;
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: black;
+  padding: 10px 20px;
+  transition: all 0.7s ease-out;
+  background-position: 20% 20%;
+  background-size: 200% 100%;
+  text-decoration: none;
+  border: 2px solid rgba(0, 0,0, .2);
+}
+
+.map .btn a:hover {
+  font-weight: 900;
+  border: 2px solid rgba(255, 255, 255, 100);
+  color: rgba(255, 255, 255, 100);
+}
+
+
+/* menu */
+.menu_c {
+  font-family: 'Roboto', sans-serif;
+  height: 500px;
+  background: #1E2739;
+  display: flex;
+  position: relative;
+  align-items: center;
+  color: white
+}
+
+.menu_c .text {
+  margin-right: 350px;
+  position: absolute;
+  right: 0;
+}
+
+.menu_c .text > p:nth-child(1) {
+  line-height: 60px;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  text-align: right;
+}
+
+.menu_c .text > p:nth-child(1) > span{
+  color: #FAD000;
+}
+
+.menu_c .text > p:nth-child(2) {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -1px;
+  margin-bottom: 35px;
+}
+
+.menu_c .img > img:nth-child(2) {
+  position: absolute;
+  right: 920px;
+  bottom: 113px;
+  transform: 1s;
+
+}
+
+.menu_c .img img:nth-child(3):hover {
+  transform: rotate(-3deg);
+}
+
+.menu_c .img img:nth-child(2):hover {
+  transform: rotate(-3deg);
+}
+
+.menu_c .img img:nth-child(1):hover {
+  transform: rotate(-3deg);
+}
+
+.menu_c .img img:nth-child(3) {
+  position: absolute;
+  left: 500px;
+  bottom: 100px;
+  transform: rotate(13deg);
+
+}
+
+.menu_c .img img:nth-child(1) {
+  position: absolute;
+  left: 290px;
+  bottom: 74px;
+  transform: rotate(-7deg);
+
+}
+
+/* 버튼 상세 */
+.menu_c .text .btn>a {
+  position: absolute;
+  right: 0;
+  width: 100px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 15px;
+  display: inline-block;
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: white;
+  padding: 10px 20px;
+  transition: all 0.7s ease-out;
+  background-position: 20% 20%;
+  background-size: 200% 100%;
+  text-decoration: none;
+  border: 2px solid rgba(223, 190, 106, .2);
+}
+
+.menu_c .btn a:hover {
+  font-weight: 900;
+  border: 2px solid rgba(255, 255, 255, 100);
+  color: rgba(255, 255, 255, 100);
+}
+
+
+
+/* 창업비용 */
+.family {
+  font-family: 'GmarketSansBold';
+  height: 874px;
+  overflow: hidden;
+  border-bottom: 3px solid white;
+  background: url(../image/family_bg1.png);
+}
+.family:hover{
+  background: url(../image/family_bg2.png);
+}
+
+.family:hover .text>p{
+  color: white;
+}
+
+.family .text {
+  display: flex;
+  margin-left: 350px;
+  padding-top: 70px;
+  padding-right: 350px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.family .text p:nth-child(1) {
+  font-size: 30px;
+  line-height: 70px;
+}
+
+.family .text p:nth-child(1) span {
+  font-size: 60px;
+  font-weight: bolder;
+
+}
+
+.family .text p:nth-child(2) {
+  height: 120px;
+  font-size: 100px;
+  font-weight: 900;
+  color: #FAD000;
+  border-bottom: 10px solid #FAD000;
+}
+
+
+/* footer */
+footer {
+  width: 1900px;
+  height: 400px;
+  background: #1E2739;
+  color: white;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+
+.f {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.f .list>ul>li {
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.f .list >ul >li:nth-child(1) {
+  font-weight: 900;
+  font-size: 20px;
+  color: #FAD000;
+}
+
+.f_end {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 10px;
+  color: gray;
+}
+
+.f_end> ul {
+  display: flex;
+  padding: 20px 0;
+  justify-content: center;
+
+}
+
+.f_end> ul >li a{
+  font-size: 10px;
+  color: rgb(173, 173, 173);
+  font-weight: 900;
+}
+
+
+body{
+  cursor: url(../image/cursor.png), auto;
+}
+
+body a{
+  cursor: url(../image/cursor.png), auto;
+
+}

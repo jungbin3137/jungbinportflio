@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>온양민속박물관</title>
+  <link rel="stylesheet" href="./css/museaum_main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,500;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- silder -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      width: 100%;
+    }
+
+    body {
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- top -->
+  <div class="m1 inner">
+
+    <div class="m1-1">
+      <ul>
+        <li><a href="">로그인</a></li>
+        <li><a href="">회원가입</a></li>
+        <li><a href="">Language</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- nav -->
+  <header>
+
+    <div class="m2 inner">
+      <a href="">
+        <div class="logo"><img src="./img/logo.png" alt=""></div>
+      </a>
+      <div class="m2-1">
+        <ul>
+          <li>
+            <p><a href="">방문</a></p>
+          </li>
+          <li>
+            <h3><a href="">전시</a></h3>
+          </li>
+          <li>
+            <h3><a href="">교육 / 행사</a></h3>
+          </li>
+          <li>
+            <h3><a href="">도서 / 상품</a></h3>
+          </li>
+          <li>
+            <h3><a href="">문의</a></h3>
+          </li>
+          <li>
+            <h3><a href="">공지</a></h3>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="m2-2">
+        <ul>
+          <li>
+            <a href="">
+              <img src="./img/facebook_logo.png" alt="">
+            </a>
+          </li>
+          <li><a href="">
+              <img src="./img/instar_logo.png" alt="">
+            </a></li>
+          <li><a href="">
+              <img src="./img/icon_menu.png" alt="">
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
+  <!--main-->
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href=""><img src="./img/main(1).png" alt=""></a></div>
+      <div class="swiper-slide"><a href=""><img src="./img/mian(2).png" alt=""></a></div>
+      <div class="swiper-slide"><a href=""><img src="./img/main(3).png" alt=""></a></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+
+
+
+  <!--관람시간-->
+  <div class="m3-clock">
+
+    <div class="m3-1">
+      <h3>관람시간</h3>
+      <h4>화/수/목/금/토/일</h4>
+      <h4>10:00 ~ 18:00</h4>
+      <h5>휴관일 : 월</h5>
+    </div>
+
+    <div class="m3-2">
+      <h4>관람료</h4>
+      <h3>성인 5,000원 학생 3,000원 경로 및 특별 1,500원</h3>
+    </div>
+
+    <div class="m3-3">
+      <a href="">
+        <h3>오시는길</h3>
+      </a>
+      <a href="">
+        <h3>예약하기</h3>
+      </a>
+    </div>
+  </div>
+
+  <!--전시-->
+  <div class="exhivition">
+    <!--전시 title-->
+    <div class="title">
+      <h3>전시</h3>
+    </div>
+
+    <!-- 전시 컨텐츠 -->
+    <div class="contents">
+
+      <div class="item">
+        <a href="./박물관 전시페이지/museaum_sub_ex1.html">
+          <img src="./img/ex (1).png" alt=""> </a>
+        <div class="btm">
+          <ul>
+            <li>현재전시</li>
+            <li>상설전시</li>
+          </ul>
+        </div>
+        <h4>제21회 한국인의 삶展</h4>
+        <h6>2021.4.16∼5.12</h6>
+
+      </div>
+
+      <div class="item">
+        <a href="">
+          <img src="./img/ex (2).jpg" alt=""> </a>
+        <div class="btm">
+          <ul>
+            <li>현재전시</li>
+            <li>기획전시</li>
+          </ul>
+        </div>
+        <h4>하루하루 탈출한다.</h4>
+        <h6>2021.8.11∼9.13</h6>
+
+      </div>
+
+      <div class="item">
+        <a href="">
+          <img src="./img/ex (3).png" alt=""> </a>
+        <div class="btm">
+          <ul>
+            <li>현재전시</li>
+            <li>기획전시</li>
+          </ul>
+        </div>
+        <h4>일상의 공간_민화</h4>
+        <h6>2021.8.11∼9.13</h6>
+
+      </div>
+
+      <div class="item">
+        <a href="">
+          <img src="./img/ex (4).png" alt=""> </a>
+        <div class="btm">
+          <ul>
+            <li>현재전시</li>
+            <li>기획전시</li>
+          </ul>
+        </div>
+        <h4>텔레피크닉 프로젝트 《당신의 휴일》</h4>
+        <h6>2021.9.14∼11.14</h6>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--안내사항-->
+  <div class="news inner">
+    <a href="">
+      <h1>알립니다.</h1>
+    </a>
+    <a href="">
+      <h5>2021.07.29</h5>
+      <h4>[ 공지사항 ] 코로나19 예방 : 9월 주말체험프로그램 잠정중단 안내</h4>
+    </a>
+  </div>
+
+
+  <!--교육/전시/온라인 상품관-->
+  <div class="m6">
+    <!--교육-->
+    <div class="edu">
+      <a href="">
+        <h3>교육</h3>
+      </a>
+      <a href="">
+        <img src="./img/edu.jpg" alt="">
+        <p>신비한 동물탐험 </p>
+        <p>초등가족 / 10월 중 주말 / 무료</p>
+      </a>
+    </div>
+
+    <!--도서-->
+    <div class="book">
+      <a href="">
+        <h3>도서</h3>
+      </a>
+
+      <div class="book-1">
+        <a href="">
+          <img src="./img/book (1).png" alt="">
+          <p><span>공예 : 재료와 질감 <br> 25,000</span> <br><br>
+            공예를 주제로 유물의 다양한 <br> 시각과 관점을 살펴볼 수 있 <br> 는 도록을 3명의 사진작가와 <br> 함께 출간하였다.</p>
+        </a>
+      </div>
+
+      <div class="book-1">
+        <a href="">
+          <img src="./img/book (2).png" alt="">
+          <p><span>자연의 도구<br> 25,000</span> <br><br>
+            2018년 '도시농부 체험전 '자 <br>연을 품다'의 전시 도록</p>
+        </a>
+      </div>
+
+    </div>
+
+    <!--온라인상품관 / 오브제 온양-->
+    <div class="product">
+      <a href="">
+        <h3>온라인상품관 / 오브제 온양</h3>
+      </a>
+
+
+      <div class=product_list>
+        <a href="">
+          <div class="product_list1">
+            <img src="./img/olineproduct (1).jpg" alt="">
+            <p>Another hand 옷걸이 <br><br> 88,000원</p>
+          </div>
+        </a>
+
+
+        <div class="product_list1">
+          <a href="">
+            <img src="./img/olineproduct (2).jpg" alt="">
+            <p>안대+파우치set : 요괴 시리즈 <br> <br> 48,000</p>
+          </a>
+        </div>
+
+        <div class="product_list1">
+          <a href="">
+            <img src="./img/olineproduct (3).jpg" alt="">
+            <p>온양램프컬렉션 <br><br> 325,000원</p>
+          </a>
+        </div>
+
+        <div class="product_list1">
+          <a href="">
+            <img src="./img/olineproduct (4).jpg" alt="">
+            <p>까치 촛대 도자기 <br><br> 20,000원</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+
+
+
+  <!--푸터-->
+  <footer>
+    <div class="footer">
+      <div class="footerall">
+
+        <div class="f1">
+          <ul>
+            <li>
+              <a href="">
+                <h4>박물관 소개</h4>
+              </a>
+            </li>
+
+            <a href="">
+              <li>설립취지</li>
+            </a>
+            <a href="">
+              <li>연혁</li>
+            </a>
+            <a href="">
+              <li>건축</li>
+            </a>
+            <a href="">
+              <li>M.I</li>
+            </a>
+            <a href="">
+              <li>기부금 현황</li>
+            </a>
+
+          </ul>
+        </div>
+
+        <div class="f1">
+          <ul>
+            <li>
+              <a href="">
+                <h4>방문</h4>
+              </a>
+            </li>
+
+            <a href="">
+              <li>관람안내</li>
+            </a>
+            <a href="">
+              <li>시설안내</li>
+            </a>
+            <a href="">
+              <li>전시해설</li>
+            </a>
+          </ul>
+
+        </div>
+
+        <div class="f1">
+          <ul>
+            <li>
+              <a href="">
+                <h4>전시</h4>
+              </a>
+            </li>
+
+            <a href="">
+              <li>상설전시</li>
+            </a>
+            <a href="">
+              <li>야외전시</li>
+            </a>
+            <a href="">
+              <li>기획전시</li>
+            </a>
+
+          </ul>
+        </div>
+
+        <div class="f1">
+          <ul>
+
+            <li>
+              <a href="">
+                <h4>교육</h4>
+              </a>
+            </li>
+
+            <a href="">
+              <li>최신소식</li>
+            </a>
+            <a href="">
+              <li>유아</li>
+            </a>
+            <a href="">
+              <li>초등학생</li>
+            </a>
+            <a href="">
+              <li>청소년</li>
+            </a>
+            <a href="">
+              <li>주말</li>
+            </a>
+
+          </ul>
+        </div>
+
+        <div class="f1">
+          <ul>
+            <li>
+              <a href="">
+                <h4>도서 / 상품</h4>
+              </a>
+            </li>
+
+            <a href="">
+              <li>도서</li>
+            </a>
+            <a href="">
+              <li>상품</li>
+            </a>
+            <a href="">
+              <li>오브제 온양</li>
+            </a>
+            <a href="">
+              <li>주문서 작성하기</li>
+            </a>
+
+          </ul>
+        </div>
+
+        <div class="f1">
+          <ul>
+            <li>
+              <a href="">
+                <h4>문의</h4>
+              </a>
+            </li>
+
+            <a href="">
+              <li>일반문의</li>
+            </a>
+            <a href="">
+              <li>공간대관</li>
+            </a>
+            <a href="">
+              <li>혼례</li>
+            </a>
+            <a href="">
+              <li>콘텐츠 사용</li>
+            </a>
+            <a href="">
+              <li>유물기증&후원</li>
+            </a>
+            <a href="">
+              <li>자원봉사</li>
+            </a>
+
+          </ul>
+        </div>
+
+        <div class="f1">
+          <ul>
+            <li>
+              <a href="">
+                <h4>공지</h4>
+              </a>
+            </li>
+
+            <a href="">
+              <li>공지사항</li>
+            </a>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="last">
+        <h4>문의 041-542-6001 ｜ 팩스 041-542-6005 ｜ 메일 oymuseum@daum.net ｜ 개인정보 처리방침 </h4>
+        <h4>© ONYANG FOLK MUSEUM</h4>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

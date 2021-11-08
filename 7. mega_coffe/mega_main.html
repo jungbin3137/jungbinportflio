@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEGACOFFEE</title>
+  <link rel="stylesheet" href="./css/mega._main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+  <style type="text/css">
+    .slider {
+      width:1900px;
+      height: 100%;
+      margin: 0px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 0px;
+    }
+
+    .slick-slide >img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="wrap">
+    <div class="nav inner">
+      <a href="./mega_main.html">
+        <img src="./image/toplogo.png" alt="">
+      </a>
+
+
+
+      <div class="bar">
+
+        <ul class="topmenu">
+          <li><a href="">로그인</a></li>
+          <li><a href="">마이페이지</a></li>
+          <li><a href="">고객센터</a></li>
+          <li><a href="">매장검색</a></li>
+        </ul>
+
+        <ul id="menulist">
+          <li><a href="">BRAND STORY</a>
+            <ul class="sub">
+              <li><a href="./1.sub_brandstory/1.brandstory.html">브랜드소개</a></li>
+              <li><a href="">회사소개</a></li>
+              <li><a href="">비전</a></li>
+              <li><a href="">BI</a></li>
+              <li><a href="">오시는 길</a></li>
+            </ul>
+          </li>
+
+          <li><a href="">MENU</a>
+            <ul class="sub">
+              <li><a href="">COFFEE</a></li>
+              <li><a href="">TEA</a></li>
+              <li><a href="">JUICE</a></li>
+              <li><a href="">ADE</a></li>
+              <li><a href="">NEW & BEST</a></li>
+            </ul>
+          </li>
+
+
+          <li><a href="">FRANCHISE</a>
+            <ul class="sub">
+              <li><a href="">개설비용</a></li>
+              <li><a href="">개설절차</a></li>
+            </ul>
+          </li>
+
+          <li><a href="">STORE</a>
+            <ul class="sub">
+              <li><a href="">매장찾기</a></li>
+              <li><a href="">직원찾기</a></li>
+            </ul>
+          </li>
+
+          <li><a href="">NEWS</a>
+            <ul class="sub">
+              <li><a href="">우수가맹점</a></li>
+              <li><a href="">언론보도</a></li>
+              <li><a href="">공지사항</a></li>
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+    <!-- nav 끝 -->
+  </header>
+  <section class="lazy slider">
+    <div class="main">
+      <img src="./image/main.png" alt="">
+     
+        <img src="./image/main_c (1).png" alt="">
+        <img src="./image/main_c (2).png" alt="">
+        <img src="./image/main_c (3).png" alt="">
+
+        <div class="btn">
+          <a href="">
+            <p>자세히보기</p>
+          </a>
+        </div>
+
+    
+    </div>
+    <div>
+      <img src="./image/main(2).png" alt="">
+    </div>
+    <div>
+      <img src="./image/main(3).png" alt="">
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function () {
+      $(".vertical-center-4").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+        slidesToShow: 4,
+        slidesToScroll: 2
+      });
+      $(".vertical-center-3").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+      $(".vertical-center-2").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+        slidesToShow: 2,
+        slidesToScroll: 2
+      });
+      $(".vertical-center").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+      });
+      $(".vertical").slick({
+        dots: true,
+        vertical: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+      $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+      $(".center").slick({
+        dots: true,
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 5,
+        slidesToScroll: 3
+      });
+      $(".variable").slick({
+        dots: true,
+        infinite: true,
+        variableWidth: true
+      });
+      $(".lazy").slick({
+        lazyLoad: 'ondemand', // ondemand progressive anticipated
+        infinite: true
+      });
+    });
+  </script>
+
+
+
+  <div class="main_bottom wrap">
+    <div class="btn">공지사항 시스템 개선 및 점검안내
+      <a href="">
+        <img src="./image/icon_plus.png" alt="">
+      </a></div>
+    <div class="btn">메가커피 프로모션
+      <a href="">
+        <img src="./image/Icon_arrow.png" alt="">
+      </a></div>
+  </div>
+
+  <!--  메가쿠폰 -->
+  <div class="coupon wrap">
+
+    <div class="img">
+      <img src="./image/c_logo.png" alt="">
+    </div>
+    <div class="text">
+      <p>ONLY <span>MEGA</span> , MEGA <span>COUPON</span> _ </p>
+      <p>- 메가커피 회원이세요? 로그인을 통해 나만의 쿠폰해택 확인해보세요 ! <br>
+        - 메가커피 회원이 아니세요? 가입을 통해 쿠폰 혜택을 즐기세요 !</p>
+      <p>회원 가입 후, 메가커피 어플 다운 후 편리하게 등록하세요! <br>
+        카드를 등록하여 메가커피 회원이 되신 후, 10잔 당 한장의 무료 음료쿠폰을 드립니다!</p>
+    </div>
+
+    <div class="btn">
+      <a href="">
+        <p>LOGIN & JOIN</p>
+        <!-- <p>자세히보기</p> -->
+      </a>
+    </div>
+
+  </div>
+  <!-- 영상으로 -->
+  <div class="video inner">
+    <video src="./image/promotion_video.mp4" controls poster="./image/poster.png" autoplay loop>
+    </video>
+    <div class="text">
+      <P><span>MAGA COFFEE</span>
+        <br>VEDIO
+      </P>
+      <p>열정가득 메가스토리를 <br>
+        영상으로 만나보세요.</p>
+
+      <div class="btn">
+        <a href="">
+          <p>MORE</p>
+        </a>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- map -->
+  <div class="map wrap">
+
+    <div class="text">
+
+      <p><span>WELCOME ! !</span> <br>
+        MEGA COFFEE_</p>
+      <p>언제나 고객님과 가장 가장 가까이 있는
+        <br> 매장을 찾아보세요! </p>
+
+      <div class="btn">
+        <a href="">
+          <p>MORE</p>
+        </a>
+      </div>
+
+    </div>
+    <div class="img">
+      <img src="./image/map (1).png" alt="">
+      <img src="./image/map (2).png" alt="">
+    </div>
+  </div>
+
+
+  <!-- menu -->
+  <div class="menu_c wrap">
+
+    <div class="img">
+      <img src="./image/menu (1).png" alt="">
+      <img src="./image/menu (2).png" alt="">
+      <img src="./image/menu (3).png" alt="">
+    </div>
+
+    <div class="text">
+      <p>ENJOY <br>
+        MEGA DESSERT<span>.</span>
+      </p>
+      <p>메가 커피만의 특별한 경험을 할 수 있는 다양한
+        <br> 음료 빵 , 마카롱 , 케익 등의 다양한 종류의 디져트</p>
+
+      <div class="btn">
+        <a href="">
+          <p>MORE</p>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- 창업비용 -->
+  <div class="family wrap">
+    <div class="text">
+      <p>함께할 가족을 기다립니다. <br>
+        <span>'거품없는 창업비용'</span> </p>
+      <p>5,390만원</p>
+    </div>
+    <!-- 
+  <div class="img">
+    <img src="./image/shop.png" alt="">
+  </div> -->
+
+    <!-- <div class="btn">
+    <div class="btn_front">
+      <a href="">
+        <p>MORE</p>
+      </a>
+    </div>
+
+    <div class="btn_back">
+      <a href="">
+        <p>MAGA</p>
+      </a>
+    </div> -->
+  </div>
+
+
+
+  </div>
+
+  <!-- why  -->
+  <div class="why wrap">
+    <img src="./image/whymega (1).png" alt="">
+    <img src="./image/whymega (2).png" alt="">
+
+  </div>
+
+  <!-- 푸터 -->
+  <footer class="wrap">
+    <div class="f inner">
+
+      <a href="./mega_main.html">
+        <img src="./image/footer_logo.png" alt="">
+      </a>
+
+      <div class="list">
+        <ul>
+          <li>COMPANY</li>
+          <li><a href="">한눈에 보기</a></li>
+          <li><a href="">메가커피 사명</a></li>
+          <li><a href="">메가커피 소개</a></li>
+          <li><a href="">국내 뉴스룸</a></li>
+        </ul>
+      </div>
+
+      <div class="list">
+        <ul>
+          <li>CORPORATE SALES</li>
+          <li><a href="">단체 및 기업 구매 안내</a></li>
+        </ul>
+      </div>
+
+      <div class="list">
+        <ul>
+          <li>PARTNERSHIP</li>
+          <li><a href="">신규 입점 제의</a></li>
+          <li><a href="">협력 고객사 등록신청</a></li>
+        </ul>
+      </div>
+
+      <div class="list">
+        <ul>
+          <li>ONLINE
+            <br> COMMUNITY</li>
+          <li><a href="">페이스북</a></li>
+          <li><a href="">트위터</a></li>
+          <li><a href="">유튜브</a></li>
+          <li><a href="">인스타그램</a></li>
+        </ul>
+      </div>
+
+
+    </div>
+    <div class="f_end inner">
+
+      <p>서울특별시 마포구 월드컵북로4길 81 1층 (주)앤하우스 │ 본사대표 전화 1588-0656 Fax 02 325 5199 │ 법인명 : 주식회사 앤하우스 대표자:김대명 │ 사업자 등록번호
+        105-87-51367
+      </p>
+      <ul>
+        <li><a href="">개인정보처리방침 │ </a></li>
+        <li><a href="">서비스 이용약관 │ </a></li>
+        <li><a href="">위치정보 이용약관 │ </a></li>
+        <li><a href="">홈페이지 이용약관</a></li>
+      </ul>
+      <p>ⓒ 2021 Starbucks Coffee Company. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

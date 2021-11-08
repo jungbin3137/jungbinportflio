@@ -1,0 +1,677 @@
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -.5px;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 1900px;
+    @font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.wrap .main {
+    background: url(../img/main.png);
+    position: relative;
+    height: 720px;
+
+}
+
+.main_bg >img{
+    position: absolute;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    left: -692px;
+    
+}
+
+@keyframes move{
+    form{
+        transform: translateX(0px);
+        transform: scaleX(0);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(692px);
+        opacity: 1;
+    }
+}
+
+
+
+
+/* top menu */
+.topmenu {
+    position: absolute;
+    top: 20px;
+    right: 360px;
+    
+}
+
+.topmenu >ul >li {
+    display: inline-block;
+    margin-left: 20px;
+
+}
+
+.topmenu >ul >li >a {
+  
+    text-decoration: none;
+    color: white;
+}
+
+/* nav */
+
+.nav {
+    position: absolute;
+    top: 30px;
+    left: 350px;
+    display: flex;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.nav .nav2>ul{
+    display: flex;
+    justify-content: space-between;
+    height: 412px;
+    margin-left: 58px;
+
+}
+.nav .nav2 >ul >li {
+    display: inline-block;
+    margin-top: 30px;
+    width: 140px;
+    position: relative;
+    text-align: center;
+    margin-left: 40px;
+
+}
+
+.nav .nav2 >ul >li >a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    height: 30px;
+}
+
+/* sub menu*/
+
+
+.nav2 > ul > li .sub{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+
+}
+
+.nav2 > ul > li .sub>li {
+    width: 140px;
+    margin: 20px 0;
+}
+
+
+
+.nav2 > ul > li .sub>li >a{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    padding: 10px; 
+    font-weight: 500;
+}
+
+
+.nav2 > ul > li:hover .sub{
+    display: block;
+    border-bottom: 3px solid white;
+    /* background: #2C5E5F; */
+    
+}
+
+.nav2 > ul > li .sub>li >a:hover{
+    color: black;
+}
+
+.nav2 > ul:hover{
+    background: url(../img/nav_bg.png) no-repeat;
+}
+
+
+.nav2>ul>li >a::after{
+    display: inline-block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    opacity: 0;
+    transition: .3s;
+    transform: translateY(-6px);
+}
+
+.nav2>ul>li >a:hover::after{
+    width: 100%;
+    opacity: 1;
+    height: 3px;
+    background-color:#2C5E5F;
+}
+
+
+
+/* main text */
+
+.main_t {
+    font-family: 'Noto Sans KR', sans-serif;
+    position: absolute;
+    top: 246px;
+    color: white;
+    left: 350px;
+}
+
+.main_t p:nth-child(2) {
+    font-size: 80px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+.main_t p:nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-top: 20px;
+    letter-spacing: -1px;
+
+
+}
+
+.main_t p:nth-child(4) > a {
+    font-weight: 900;
+    font-size: 20px;
+    color: #2C5E5F;
+}
+
+.main_t >p >a {
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* 분양정보 */
+
+/* 분양정보 타이틀 */
+.c1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: url(../img/bg-2.png);
+    height: 862px;
+    position: relative;
+}
+
+.c1_title {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 350px;
+    margin-bottom: 30px;
+
+}
+
+.c1_title p:nth-child(1) {
+    font-size: 28px;
+    font-weight: 900;
+    position: absolute;
+    left: 910px;
+
+}
+
+.c1_title p:nth-child(2) {
+
+    position: absolute;
+    right: 350px;
+}
+
+
+.c1_title p:nth-child(2)> a{
+    text-decoration: none;
+    color: #2C5E5F;
+}
+
+.c1_title p:nth-child(2)> a > span{
+    color: black;
+    font-weight: 900;
+}
+
+/* 분양정보 내용 */
+
+.c1_content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+
+.c1_c_1 {
+    position: relative;
+    margin-top: 55px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    transition: all 0.1s ease-in-out;
+}
+
+.c1_c_1:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+.c1_c_1 img:nth-child(1) {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.c1_c_1 ul {
+    line-height: 30px;
+
+}
+
+.c1_c_1 ul li span {
+    margin-right: 20px;
+    font-weight: 900;
+}
+
+.c1_c_1 ul li:nth-child(2) {
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* 분양정보 버튼 */
+
+.c1_c1_bt>a {
+    display: inline-block;
+    margin-top: 42px;
+    width: 113px;
+    height: 44px;
+    text-decoration: none;
+    color: #A89D8D;
+    border: 1px solid #A89D8D;
+    text-align: center;
+    line-height: 44px;
+}
+
+.c1_c1_bt>a:hover {
+    background-color: #A89D8D;
+    color: white;
+}
+
+
+
+/* 메르디안 스토리 */
+.c2 {
+    display: flex;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+.c2_t {
+    position: relative;
+}
+
+.c2_t>ul {
+    position: absolute;
+    top: 93px;
+    left: 350px;
+    color: white;
+    font-weight: 700;
+}
+
+.c2_t>ul li:nth-child(1) {
+    color: #D47244;
+    margin-bottom: 15px;
+}
+
+.c2_t>ul li:nth-child(2) {
+    font-size: 33px;
+    margin-bottom: 53px;
+}
+.c2_t>ul li:nth-child(3) {
+    line-height: 30px;
+    font-weight: 400;
+    letter-spacing: -.5px;
+}
+
+.c2_t_list>ul {
+    position: absolute;
+    top: 400px;
+    left: 350px;
+
+}
+
+.c2_t_list>ul>li {
+    width: 320px;
+    height: 45px;
+}
+
+.c2_t_list>ul>li>a {
+    text-decoration: none;
+    color: white;
+    width: 0px;
+    height: 45px;
+    transition: .3s;
+    position: relative;
+
+}
+
+
+.c2_t_list>ul>li>a::after {
+    z-index: 1;
+    bottom: -12px;
+    position: absolute;
+    width: 0px;
+    display: block;
+    content: "";
+    height: 2px;
+    background-color: #D47244;
+    transition: .3s;
+
+}
+
+.c2_t_list>ul>li:nth-child(2)>a::after{
+    width: 350px;
+} 
+
+
+.c2_t_list>ul>li>a:hover::after{
+    width: 350px;
+}
+
+
+
+.c2_m {
+    position: relative;
+}
+
+.c2_m .c2_m_1 {
+    position: absolute;
+    top: 471px;
+    left: 83px;
+    display: flex;
+    font-size: 20px;
+}
+
+.c2_m .c2_m_1 p:nth-child(1) {
+    font-size: 40px;
+}
+
+.c2_m .c2_m_1 p:nth-child(2) {
+    margin-left: 95px;
+    line-height: 30px;
+    font-weight: 700;
+    
+}
+
+.c2_m .c2_m_1 >p >span {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.c2_m .c2_m_1 img {
+    margin-top: 90px;
+}
+
+.c2>img {
+    height: 411px;
+    margin-top: 209px;
+}
+
+/* 메르디안 서비스 */
+.c3{
+    height: 715px;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-bottom: 25px;
+}
+
+.c3 > p {
+    margin: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.c3_t {
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    background: #F2F2F2;
+    font-weight: 700;
+    justify-content: space-around;
+    text-align: center;
+}
+.c3_c{
+    width: 400px;
+    height: 50px;
+
+
+}
+
+.c3_c_t{
+    height: 570px;
+}
+
+
+
+.c3_c_t >p {
+    width: 400px;
+    line-height: 30px;
+   
+    
+
+}
+
+.c3_c .c3_c_t p:nth-child(2){
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    color: teal;
+}
+
+/* .c3_c .c3_c_t p:nth-child(3){
+    padding-bottom: 60px;
+} */
+
+.c3_t .c3_c_t > p > a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+
+
+.c3_c_box1 {
+    width: 400px;
+    height: 93px;
+    background-color: #CECCB5;
+    padding: 10px 0;
+}
+
+.c3_c_box1 >a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+    line-height: 10px;
+    padding-top: 30px;
+    color: black;
+}
+
+.c3_c_box2 {
+    width: 400px;
+    line-height: 10px;
+    height: 93px;
+    background-color: #2C5E5F;
+    padding: 10px 0;
+}
+
+.c3_c_box2 >a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+    padding-top: 30px;
+    color: white;
+    
+}
+
+.c3_c_box3 {
+    width: 400px;
+    height: 93px;
+    line-height: 10px;
+    background-color: #D47244;
+}
+
+.c3_c_box3 >a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+    padding-top: 40px;
+    color: white;
+}
+
+/* 메르디안 뉴스 */
+/* title */
+.news{
+    display: flex;
+
+}
+
+.news1{
+    height: 280px;
+    width: 300px;
+    background-color: #F2F2F2;
+    font-weight: 900;
+    text-align: center;
+
+
+}
+
+.news1> p{
+    font-size: 25px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    line-height: 50px;
+
+}
+
+.news1 >a{
+    text-decoration: none;
+    color: #2C5E5F;
+    font-size: 20px;
+
+}
+
+/* 내용 */
+.news2{
+    width: 500px;
+    background-color: #F2F2F2;
+    height: 280px;
+
+}
+
+.news2 >p{
+    margin-top: 60px;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 30px;
+}
+
+/* 견본주택 */
+.news3{
+    width: 400px;
+    height: 280px;
+    background: url(../img/news.png);
+
+}
+
+.news3> a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+}
+
+.news3> a > p > span{
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+.news3 >a >p:nth-child(1){
+    font-weight: 900;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.news3 >a >p:nth-child(2){
+    margin-bottom: 30px;
+}
+
+
+/* 푸터 */
+.footer{
+    width: 1900px;
+    height: 200px;
+    background: #2C5E5F;
+    
+}
+
+.f{
+    color: rgb(180, 180, 180);
+    font-size: 15px;
+    padding-top: 40px;
+    box-sizing: border-box;
+
+}
+.f1{
+    display: flex;
+    margin-left: 350px;
+    font-weight: 700;
+}
+
+.f1 >a{
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+    margin: 0 20px 10px 20px; 
+}
+
+.f2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.f2 .f2_1,.f2_2 >p{
+    line-height: 30px;
+
+}
+
+.f2_2> p{
+    font-size: 20px;
+    font-weight: 500;
+}

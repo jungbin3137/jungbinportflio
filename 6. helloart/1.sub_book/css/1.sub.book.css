@@ -1,0 +1,168 @@
+@font-face {
+  font-family: 'NEXON Lv1 Gothic OTF Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NEXON Lv1 Gothic OTF';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NEXON Lv1 Gothic OTF Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* a {
+  text-decoration: none;
+  color: black;
+}
+
+.wrap {
+  width: 1900px;
+  margin: 0 auto;
+
+}
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* 탑메뉴 */
+.topmenu {}
+
+.topmenu ul {
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 500;
+  align-items: center;
+}
+
+.topmenu ul li {
+  margin-left: 30px;
+}
+
+.nav {
+  text-align: center;
+}
+
+.nav .logo {
+  font-size: 100px;
+  font-weight: 900;
+}
+
+.nav .navbar ul {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav .navbar>ul>li {
+  font-size: 20px;
+  margin: 0 20px;
+  font-weight: 700;
+}
+
+.nav .navbar>ul>li:hover{
+  border-bottom: 2px solid black;
+}
+
+/* title */
+.title{
+  height: 180px;
+  line-height: 180px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  border-top: 2px solid slategrey;
+  border-bottom: 2px solid slategrey;
+}
+
+.list .container{
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.list .container .box p{  
+  text-align: center;
+  line-height: 20px;
+
+}
+
+.list .container .box p span{
+  font-weight: 900;
+}
+
+/* 버튼 */
+.button{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.button .btn a{
+  padding: 10px 50px;
+  border-radius: 10px;
+  border:2px solid dimgray;
+  font-weight: 900;
+  transition: .3s;
+  box-sizing: border-box;
+}
+
+
+.button a:hover{
+  background-color: dimgray;
+  color: white;
+}
+
+/* 푸터 */
+footer{
+  height: 200px;
+  background: #E4E4E4;
+
+}
+
+.bg{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.bg .left p{
+  line-height: 25px;
+}
+.bg .left p span{
+  font-weight: 700;
+
+}
+
+.bg .left ul{
+  display: flex;
+
+}
+.bg .left ul li{
+  font-weight: 700;
+  margin: 20px 20px 0 0;
+}
+
+.right li{
+  margin: 20px;
+  font-weight: 900;
+  text-align: right;
+}
+
+.right li a{
+  font-weight: 500;
+  width: 200px;
+  background: white;
+}
+

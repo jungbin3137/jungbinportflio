@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green farm House</title>
+  <link rel="stylesheet" href="./css/1.sub.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,500;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      /* background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000; */
+      /* margin: 0;
+        padding: 0; */
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      /* text-align: center;
+        font-size: 18px; */
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      /* justify-content: center; */
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      /* align-items: center; */
+    }
+
+    /* .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    } */
+  </style>
+
+
+  <style>
+    body #top {
+      position: fixed;
+      right: 250px;
+      bottom: 60px;
+      opacity: 1;
+      color: yellow;
+      transition: opacity 300ms;
+      cursor: pointer;
+      text-align: center;
+      z-index: 99;
+    }
+  </style>
+
+
+
+
+
+
+</head>
+
+<body>
+  <div id="top"> <a href="./1.sub.html"><img src="./img/top_btm.png" alt=""> </a>
+
+  </div>
+
+  <div class="header_nav">
+
+    <div class="logo"> <a href=""><img src="../로고.png" alt=""></a></div>
+    <div class="menu">
+      <ul class="nav1">
+
+        <li class="nav">
+          <a href="">회사소개</a>
+          <ul class="subnav">
+            <li><a href="">인사말</a></li>
+            <li><a href="">비젼</a></li>
+            <li><a href="">연혁</a></li>
+            <li><a href="">보유인증│수상</a></li>
+            <li><a href="">기술협력</a></li>
+            <li><a href="">찾아오시는길</a></li>
+          </ul>
+        </li>
+
+        <li class="nav"><a href="">사업소개</a>
+          <ul class="subnav">
+            <li><a href="">스마트팜</a></li>
+            <li><a href="">알루미늄</a></li>
+            <li><a href="">실내온실</a></li>
+            <li><a href="">스마트양식장</a></li>
+          </ul>
+        </li>
+
+
+        <li class="nav"><a href="">제품소개</a>
+          <ul class="subnav">
+            <li><a href="">온실환경구성</a></li>
+            <li><a href="">환경제어시스템</a></li>
+            <li><a href="">온실타입</a></li>
+            <li><a href="">주요부품</a></li>
+          </ul>
+        </li>
+
+
+        <li class="nav"><a href="">포트폴리오</a>
+          <ul class="subnav">
+            <li><a href="">포트폴리오</a></li>
+          </ul>
+        </li>
+
+
+        <li class="nav"><a href="">고객센터</a>
+          <ul class="subnav">
+            <li><a href="">보도자료</a></li>
+            <li><a href="">공지사항</a></li>
+            <li><a href="">자료실</a></li>
+            <li><a href="">Q&A</a></li>
+            <li><a href="">VIDEO</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      <ul class="nav2">
+
+        <li><a href="">LOGIN</a></li>
+
+
+        <li><a href="">JOIN</a></li>
+
+
+        <li><a href=""><img src="../image/kor.png" alt=""><span>KOR</span></a></li>
+
+        <!-- <a href="">
+          <li><img src="./image/menu.png" alt=""></li>
+        </a> -->
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide" id="tab1">
+
+        <div class="ceo inner">
+          <div class="title">
+            <h1>회사소개</h1>
+            <h3>농업의 새로운 물결 스마트팜</h3>
+          </div>
+          <ul>
+            <li><a href="#tab1">인사말 및 연혁</a></li>
+            <li><a href="#tab2">비젼 및 미션</a></li>
+            <li><a href="#tab3">보유인증 및 수상</a></li>
+            <li><a href="#tab4">기술협력</a></li>
+            <li><a href="#tab5">찾아오시는길</a></li>
+          </ul>
+
+
+          <div class="hi">
+            <div class="text">
+              <h3>안녕하십니까? <br>
+                대한민국 스마트팜 산업을 이끄는 대표기업 <br>
+                <span>(주)그린팜온실</span> 홈페이지를 찾아주신 분들께 감사드립니다.</h3>
+              <p><span>(주)그린팜온실</span>는 온실사업을 시작으로 알루미늄 사업을 통해 스마트팜 산업의 수직계열화를 달성하였습니다. 21세기 현재 산 <br>
+                업과 과학의 발달로 살기 좋은 세상이 되었지만 환경오염으로 인해 지구촌 곳곳에 이상기후 현상이 발생하고 있습니다. <br>
+              </p>
+
+              <p><span>(주)그린팜온실</span>는 이러한 시대적·환경적 변화에 발맞춰 저탄소 녹색성장기업으로 발돋움하고 있습니다. 스마트팜(첨단온실)
+                사업, 식물공장사업, 신재생에너지(태양광)사업, 녹색사업(녹화조경), 도시경관(LED)사업을 통해 환경과 에너지 사업에 있어
+                서 수직과 수평 계열화를 완성시켜 나아가고 있습니다.
+              </p>
+              <p>또한, <span>(주)그린팜온실</span>는 고객만족과 기술혁신을 통해 지속적인 기술투자를 아끼지 않을 것이며,
+                정직한 기업, 성실한 기업으로 성장해 나아갈 것입니다. 환경과 인류를 위한 가치창출과 삶의 편익을 추구하는 기업이 되겠다는
+                이념으로 고객과 함께 밝은 미래를 힘차게 열어가겠습니다.</p>
+              <p>대표이사 <span>김성준</span></p>
+            </div>
+            <div class="img">
+              <img src="./img/ceo.png" alt="">
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+
+      </div>
+
+      <div class="swiper-slide" id="tab2">
+        <div class="vision">
+
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="mission">
+
+        </div>
+      </div>
+
+
+
+      <div class="swiper-slide" id="tab3">
+        <div class="awards">
+
+          <div class="inputbox">
+            <input type="text" value="검색어 입력"> <input type="submit" value="검색">
+          </div>
+
+          <div class="item">
+            <ul>
+
+              <li>
+                <a href="">
+                  <img src="./img/Technology(1).png" alt="">
+                  <p>녹색전문기업 확인서</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <img src="./img/Technology(2).png" alt="">
+                  <p>녹색기업 인증서</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <img src="./img/Technology(3).png" alt="">
+                  <p>해외특허 5건</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <img src="./img/Technology(4).png" alt="">
+                  <p>국내 특허 25건</p>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="item">
+            <ul>
+
+              <li>
+                <a href="">
+                  <img src="./img/Technology(5).png" alt="">
+                  <p>소니 그린파트너</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <img src="./img/Technology(6).png" alt="">
+                  <p>품질경영 시스템 인증서</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <img src="./img/Technology(7).png" alt="">
+                  <p>벤처기업 확인서</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <img src="./img/Technology(8).png" alt="">
+                  <p>기술혁신형 중소기업 확인서</p>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div class="swiper-slide" id="tab4">
+        <div class="global">
+
+        </div>
+      </div>
+
+      <div class="swiper-slide" id="tab5">
+        <div class="map inner">
+          <h1>찾아 오시는 길</h1>
+
+          <div class="text">
+            <div>
+              <img src="./img/icon_map.png" alt="">
+            </div>
+
+
+            <p>경상북도 경주시 강동면 인동리 36-21</p>
+
+
+            <div>
+              <img src="./img/icon_phone.png" alt="">
+            </div>
+            <p>+82547622740</p>
+          </div>
+
+
+          <div>
+            <!-- 1. 지도 노드 -->
+            <div id="daumRoughmapContainer1635664181619" class="root_daum_roughmap root_daum_roughmap_landing">
+
+            </div>
+
+            <script charset="UTF-8" class="daum_roughmap_loader_script"
+              src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js">
+            </script>
+
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+              new daum.roughmap.Lander({
+                "timestamp": "1635664181619",
+                "key": "27uwu",
+                "mapWidth": "1200",
+                "mapHeight": "400"
+              }).render();
+            </script>
+
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="swiper-slide">
+
+        <footer>
+
+          <div class="history">
+            <div class="text">
+              <h1>HISTORY</h1>
+
+              <div class="item">
+                <h2>2021</h2>
+                <p>식물재배시스템 특허 취득 <br>
+                  모범납세자 기획재정부 장관상 수상</p>
+              </div>
+
+              <div class="item">
+                <h2>2020</h2>
+                <p>빌딩형 어류양식시스템 특허 취득 <br>
+                  계열 회사 설립(그린피시팜, 그린케이팜)</p>
+              </div>
+
+              <div class="item">
+                <h2>2019</h2>
+                <p>식물재배시스템 특허 취득 <br>
+                  모범납세자 기획재정부 장관상 수상</p>
+              </div>
+
+              <div class="item">
+                <h2>2018</h2>
+                <p>업다운 시스템을 이용한 식물의 재배장치 특허 취득(일본) <br>
+                  식물의 대량재배장치 특허 취득(유럽 7개국)</p>
+              </div>
+
+              <div class="item">
+                <h2>2017</h2>
+                <p>팜앤조이 청년스마트팜 완공 - 충남 아산시 <br>
+                  사막기후 적응형 스마트온실 융복합 설계 및 실증모델 개발 사업 수주</p>
+              </div>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="footer">
+              <div class="footer_inner">
+                <div class="footer1">
+                  <h4>회사소개</h4>
+                  <ul>
+                    <a href="">
+                      <li>인사말</li>
+                    </a>
+                    <a href="">
+                      <li>비젼</li>
+                    </a>
+                    <a href="">
+                      <li> 연혁</li>
+                    </a>
+                    <a href="">
+                      <li> 보유인증 및 수상실적</li>
+                    </a>
+                    <a href="">
+                      <li> 기술협력</li>
+                    </a>
+                    <a href="">
+                      <li> 찾아오시는 길</li>
+                    </a>
+                  </ul>
+                </div>
+
+                <div class="footer1">
+                  <h4>사업소개</h4>
+                  <ul>
+                    <a href="">
+                      <li>스마트팜</li>
+                    </a>
+                    <a href="">
+                      <li>알루미늄</li>
+                    </a>
+                    <a href="">
+                      <li>실내온실</li>
+                    </a>
+                    <a href="">
+                      <li>스마트 양식장</li>
+                    </a>
+                  </ul>
+                </div>
+
+                <div class="footer1">
+                  <h4>제품소개</h4>
+                  <ul>
+                    <a href="">
+                      <li>온실환경 구성요소</li>
+                    </a>
+                    <a href="">
+                      <li>환경제어 시스템(스마트팜)</li>
+                    </a>
+                    <a href="">
+                      <li>온실 타입</li>
+                    </a>
+                    <a href="">
+                      <li>주요 부품</li>
+                    </a>
+                  </ul>
+                </div>
+
+                <div class="footer1">
+                  <h4>포트폴리오</h4>
+                  <ul>
+                    <a href="">
+                      <li>포트폴리오</li>
+                    </a>
+                  </ul>
+                </div>
+
+                <div class="footer1">
+                  <h4>고객센터</h4>
+                  <ul>
+                    <a href="">
+                      <li>보도자료</li>
+                    </a>
+                    <a href="">
+                      <li>공지사항</li>
+                    </a>
+                    <a href="">
+                      <li>자료실</li>
+                    </a>
+                    <a href="">
+                      <li>FAQ</li>
+                    </a>
+                    <a href="">
+                      <li>VIDEO</li>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="footerlast">
+            <div class="footerlast1">
+              <p>
+                경상북도 경주시 강동면 인동새들길 5 대표이사 : 윤 명 애 사업자등록번호 : 551-81-00638 
+                Tel : (054)762-2740 Fax : (054)762-2741 Mobile : 010-2125-2740 E-mail : myeongae76@naver.com 
+                copyright (C) GREEN FARM HOUSE CO., LTD. all rights reserved.</p>
+              <a href="./greenform_main.html">
+                <img src="./icon/footerlogo.png" alt="">
+              </a>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+
+
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          direction: "vertical",
+          slidesPerView: 1,
+          spaceBetween: 30,
+          mousewheel: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+      <script>
+        $(function () {
+          $("#tab2").click(function () {
+            $("#tab2 p")
+              .css({
+                "color": "red"
+              })
+          })
+        });
+      </script>
+</body>
+
+</html>

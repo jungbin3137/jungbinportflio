@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>신세계 병원</title>
+  <link rel="stylesheet" href="./online.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
+
+
+  
+</head>
+
+<body>
+  <!--해더-->
+  <header>
+
+    <div class="topmenu">
+      <ul class="inner">
+        <li><a href="">로그인</a></li>
+        <li><a href="">회원가입</a></li>
+        <li><a href="">의료상담</a></li>
+        <li><a href="">고객의 소리</a></li>
+      </ul>
+    </div>
+
+    <div class="menu inner">
+      <div class="logo">
+        <a href="/9. sinsasegea_hospital/sinsaegae_hostital_main (1).HTML">
+          <img src="/9. sinsasegea_hospital/icon/logo.png" alt="로고">
+        </a>
+      </div>
+      <ul>
+        <li><a href="">병원소개</a>
+
+          <ul class="sub">
+            <li><a href="">인사말</a></li>
+            <li><a href="">병원소개</a></li>
+            <li><a href="">미션/비젼</a></li>
+            <li><a href="">의료진소개</a></li>
+            <li><a href="">진료예약</a></li>
+            <li><a href="">찾오오시는길</a></li>
+          </ul>
+
+        </li>
+
+        <li><a href="">진료내용</a>
+          <ul class="sub">
+            <li><a href="">산모</a></li>
+            <li><a href="">무흉터 수술</a></li>
+            <li><a href="">육아정보</a></li>
+            <li><a href="">갱년기</a></li>
+            <li><a href="">요실금</a></li>
+            <li><a href="">유방클리닉</a></li>
+
+          </ul>
+        </li>
+
+        <li><a href="">소아청소년과</a>
+          <ul class="sub">
+
+            <li><a href="">예방접종</a></li>
+            <li><a href="">영유아검진</a></li>
+            <li><a href="">신생아질환</a></li>
+
+          </ul>
+        </li>
+        <li><a href="">종합건강검진</a>
+          <ul class="sub">
+
+            <li><a href="">종합건강검진</a></li>
+            <li><a href="">국민건강보험</a></li>
+            <li><a href="">공무원 채용</a></li>
+
+          </ul>
+        </li>
+
+        <li><a href="">산후조리원</a>
+          <ul class="sub">
+
+            <li><a href="">산후웰빙</a></li>
+            <li><a href="">시설안내</a></li>
+            <li><a href="">이용안내</a></li>
+            <li><a href="">예약하기</a></li>
+
+          </ul>
+        </li>
+
+        <li><a href="">산모교실</a>
+          <ul class="sub">
+
+            <li><a href="">산모교실</a></li>
+            <li><a href="">교실일정</a></li>
+
+          </ul>
+        </li>
+
+        <li><a href="">커뮤니티</a>
+          <ul class="sub">
+
+            <li><a href="">공지사항</a></li>
+            <li><a href="">의료상담</a></li>
+            <li><a href="">고객의소리</a></li>
+            <li><a href="">진료후기</a></li>
+            <li><a href="">F&A</a></li>
+            <li><a href="">신생아포토</a></li>
+          </ul>
+
+        </li>
+
+      </ul>
+    </div>
+
+  </header>
+
+
+  <section class="wrap">
+    <div class="title inner">
+      <p>온라인 예약 하기</p>
+    </div>
+
+    <div class="agree inner">
+      <p>고유식별 수집 및 이용안내 동의</p>
+      <div class="text">
+        <ul>
+          <li><span>●</span> 수집하는 개인 정보 항목 : 이름 , 휴대전화번호 , 이메일 </li>
+          <li><span>●</span> 수집 및 이용 목적 : 진료 예약 및 조회 , 진료 안내</li>
+          <li><span>●</span> 보유 및 이용 기간 : 진료 예약 또는 진료 조회 후 페기(의료법에 준함)</li>
+          <li>신세계 병원은 의료법 시행령 제 42조의 2. 국민건강보험법 제 12조에 의거하여 진료예약 및 환자 확인을 위한 아래의 고유 식별 번호를 수집하고 있음을 고지합니다.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="inner">[개인정보 수집 이용 동의는 거부할수 있으며, 거부할 경우는 서비스 사용이 일부 제한 될 수 있습니다.]</p>
+
+    <table class="table inner">
+
+      <tr>
+        <th>예약자 이름</th>
+        <td><input type="text" value="" size="90px" height="50px"></td>
+      </tr>
+
+      <tr>
+        <th>환자(주민)등록번호</th>
+        <td><input type="text" value=""> - <input type="password"></td>
+      </tr>
+
+      <tr>
+        <th>휴대전화 번호</th>
+        <td><input type="text" value="010"> - <input type="text"> - <input type="text">
+          </datalist></td>
+      </tr>
+
+      <tr>
+        <th>이메일</th>
+        <td>
+          <input type="email" value=""> @ <input list="email_list" id="email" name="email">
+          <datalist id="email_list">
+            <option value="naver.com" label="네이버"></option>
+            <option value="gamail.com" label="구글"></option>
+            <option value="homail.net" label="핫메일"></option>
+          </datalist>
+      
+        
+        </td>
+      </tr>
+
+    </table>
+
+
+
+    <div class="bottom inner">
+      <div class="btm">
+        <a href="">진료 예약하기</a>
+      </div>
+      <div class="btm">
+        <a href="">온라인 예약 내역 조회</a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!--푸터-->
+  <footer class="bg">
+    <div class="footer inner">
+      <ul>
+        <li><a href="">개인정보취급방침</a> ┃</li>
+        <li><a href="">이용약관</a> ┃</li>
+        <li><a href="">진료시간</a> ┃</li>
+        <li><a href="">찾아오시는 길</a></li>
+      </ul>
+      <div class="f0">
+        <div class="f3">
+          상호명 : 신세계여성병원 주소 : 대구광역시 북구 동북로 196 <br> 사업자등록번호 : 504-16-23603
+          Tel : 053.954.7771 Fax : 053.954.5932 <br> E-mail : ssghos@naver.com
+          <br> COPYRIGHT© 신세계여성병원. ALL RIGHTS RESERVED.
+        </div>
+        <div class="f4"> 산부인과 응급환자는 <br> 24시간 진료합니다.</div>
+        <div class="f5">
+          <span class="f5-1">진료시간 및 상담</span> <span class="f5-2">053.954.7771</span>
+          <br> 평일09 : 00 ~ 18 : 00 <br>
+          토요일09 : 00 ~ 16 : 00 점심시간13 : 00 ~ 14 : 00 <br>
+          일요일/공휴일09 : 00 ~ 12 : 30 평일 야간진료18 : 00 ~ 20 : 00</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

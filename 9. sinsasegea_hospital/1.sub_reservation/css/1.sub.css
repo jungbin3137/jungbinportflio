@@ -1,0 +1,533 @@
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.wrap {
+  width: 1900px;
+  margin: 0 auto;
+}
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* 해더 */
+
+/* topmenu */
+.topmenu {
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  justify-content: flex-end;
+  background: #0054D1;
+  padding-right: 48px;
+}
+
+.topmenu>ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.topmenu>ul>li {
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.topmenu>ul>li>a {
+  text-decoration: none;
+  color: white;
+}
+
+/* nav */
+
+.menu {
+  display: flex;
+  height:80px;
+  line-height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dddddd;
+
+}
+
+.menu .logo{
+  padding-top: 20px;
+}
+
+.menu>ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu>ul>li {
+  margin-left: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+  position: relative;
+  width: 110px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+
+.menu>ul>li>a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+
+
+}
+
+.menu>ul>li:hover {
+  border-bottom: 2px solid blue;
+  box-sizing: border-box;
+
+}
+
+.menu>ul>li:hover .sub{
+  display: block;
+}
+
+.menu>ul>li .sub{
+  position: absolute;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  width: 110px;
+  border-bottom: 3px solid blue;
+
+  display: none;
+}
+
+.menu>ul>li .sub>li a{
+  text-decoration: none;
+  color: black;
+
+}
+
+.menu>ul>li .sub>li:hover {
+  font-weight: 700;
+
+}
+
+section{
+  background: url(../img/reservation_bg.png);
+  height: 1909px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+section>.title{
+  padding-top: 40px;
+  box-sizing: border-box;
+  height: 119px;
+  border-bottom: 1px solid gray;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.agree>p{
+  height: 99px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 100px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.agree .text > ul{
+  height: 131px;
+  border: 1px solid gray;
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 25px 25px;
+  box-sizing: border-box;
+}
+
+.agree .text > ul >li{
+  font-size: 15px;
+}
+
+.agree .text > ul>li > span{
+  color: #0054D1;
+  font-size: 10px;
+}
+
+.container> ul{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+
+/* 예약 js */
+
+
+/* *{box-sizing: border-box;} */
+#container {
+  width:1200px;
+  margin:0 auto;
+}
+.tab {
+  list-style: none;
+  margin-top: 50px;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.tab > li {
+border-bottom:1px solid gray;
+width:400px;	float: left;
+box-sizing: border-box;
+}
+
+.tab > li > a {
+  display: inline-block;
+  color:black;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 0px;
+  font-size: 17px;
+  transition:0.3s;border-bottom:0;
+}
+
+.tabcontent {
+  display: none;
+        padding: 6px 12px;
+  color:black;
+}
+
+ul.tab li.current{
+       
+background: #F5F5F5;
+border-bottom: 3px solid #FFA200;
+box-sizing: border-box;
+font-weight: 700;
+}
+    ul.tab li.current a{color:black;
+       
+        }
+    
+.tabcontent.current {
+  display: block;
+}
+
+
+
+
+/* 온라인 예약 */
+
+#tab1 {
+  position: relative;
+  font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+#tab1 > h1{
+  margin-top: 50px;
+  font-size:25px;
+  font-weight: 700;
+  height: 36px;
+  border-left: 5px solid #0054D1;
+  line-height: 30px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+#tab1 >p{
+ padding: 10px 20px;}
+
+
+ #tab1 >p > span{
+  color: #0054D1;
+  font-size: 10px;
+ }
+
+ #tab1 .title  >p > span{
+  color: #0054D1;
+  font-size: 10px;
+}
+#tab1 .btn >a{
+  position: absolute;
+  right: 0;
+  top: 40px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  line-height: 40px;
+  font-weight: 700;
+  width: 256px;
+  height: 48px;
+  background: #0054D1;
+  border-radius: 10px;
+  line-height: 45px;
+  letter-spacing: 2px;
+}
+
+#container #tab1 .title >p{
+  font-size: 20px;
+  padding-left: 20px;
+  font-weight: 700;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+#container #tab1 .title >p > span{
+  color: #0054D1;
+  font-size: 10px;
+  padding-right: 10px;
+}
+
+#container #tab1 >ul{
+  margin-left: 53px;
+  display: flex;
+  margin-top: 53px;
+  justify-content: space-between;
+
+}
+#container #tab2 >ul{
+  margin-left: 53px;
+  display: flex;
+  margin-top: 53px;
+  justify-content: space-between;
+
+}
+
+/* 전화예약 */
+
+table{
+  width: 1100px;
+  margin-left: 20px;
+  border-collapse: collapse;
+}
+
+table th{
+  background: #F5F5F5;
+  width: 590px;
+  height: 45px;
+  border: 1px solid #6b6b6b;
+  line-height: 40px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+tbody tr td{
+  text-align: center;
+  width: 0px;
+  height: 50px;
+  border: 1px solid #6b6b6b;
+  line-height: 50px;
+  vertical-align: middle;
+
+}
+
+tbody tr:nth-child(1) p{
+  font-size: 20px;
+}
+
+tbody tr:nth-child(1) p:nth-child(2){
+  color: #0054D1;
+  font-size: 40px;
+  font-weight: 900;
+  margin: 20px 0;
+ 
+
+}
+
+#tab2 {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+#tab2 > h1{
+  margin-top: 50px;
+  font-size:25px;
+  font-weight: 700;
+  height: 36px;
+  border-left: 5px solid #0054D1;
+  line-height: 30px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+#tab2 >p{
+ padding: 10px 20px;
+ color: #FF6600;
+  line-height: 25px;}
+
+
+ #tab2 >p > span{
+  color: #0054D1;
+  font-size: 10px;
+ }
+
+ #tab2 .title  >p > span{
+  color: #0054D1;
+  font-size: 10px;
+}
+
+#container #tab2 .title >p{
+  font-size: 20px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+#container #tab2 .title >p > span{
+  color: #0054D1;
+  font-size: 10px;
+  padding-right: 10px;
+}
+
+#container #tab2 >ul{
+  margin-left: 53px;
+  display: flex;
+  margin-top: 53px;
+  justify-content: space-between;
+
+}
+
+
+/* 방문예약 */
+
+
+
+#tab3 {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+#tab3 > h1{
+  margin-top: 50px;
+  font-size:25px;
+  font-weight: 700;
+  height: 36px;
+  border-left: 5px solid #0054D1;
+  line-height: 30px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+#tab3 >p{
+ padding: 10px 20px;
+ color: #FF6600;
+  line-height: 25px;}
+
+
+ #tab3 >p > span{
+  color: #0054D1;
+  font-size: 10px;
+ }
+
+ #tab3 .title  >p > span{
+  color: #0054D1;
+  font-size: 10px;
+}
+
+#container #tab3 .title >p{
+  font-size: 20px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+#container #tab3 .title >p > span{
+  color: #0054D1;
+  font-size: 10px;
+  padding-right: 10px;
+}
+
+#container #tab3 >ul{
+  margin-left: 53px;
+  display: flex;
+  margin-top: 53px;
+  justify-content: space-between;
+
+}
+
+
+
+#tab3 .btm a{
+ text-decoration: none;
+ margin-left: 50px;
+}
+
+
+
+/* 푸터 */
+
+.bg{
+  background: #F5F5F5;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.footer {
+  line-height: 30px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.footer ul {
+  font-weight: bold;
+  display: flex;
+  list-style: none;
+}
+
+.footer ul li {
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.footer ul> li >a{
+  text-decoration: none;
+  color: black;
+}
+
+.footer .f0 {
+  display: flex;
+}
+
+.footer .f3 {
+  margin-bottom: 20px;
+  width: 50%;
+  margin: 0;
+}
+
+.footer .f4 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  width: 15%;
+  margin-left: 20px;
+}
+
+.footer .f5 {
+  margin-left: 200px;
+  width: 45%;
+  margin: 0;
+}
+
+.footer .f5 .f5-1 {
+  color: black;
+  font-weight: bold;
+}
+
+.footer .f5 .f5-2 {
+  color: #D66190;
+  font-weight: bold;
+}

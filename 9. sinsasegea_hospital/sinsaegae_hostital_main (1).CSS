@@ -1,0 +1,383 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.wrap {
+    width: 1900px;
+    margin: 0 auto;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 해더 */
+
+/* topmenu */
+.topmenu {
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    justify-content: flex-end;
+    background: #0054D1;
+    padding-right: 48px;
+}
+
+.topmenu>ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.topmenu>ul>li {
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.topmenu>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+/* nav */
+
+.menu {
+    display: flex;
+    height: 80px;
+    line-height: 50px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu .logo {
+    padding-top: 20px;
+}
+
+.menu>ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu>ul>li {
+    margin-left: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    position: relative;
+    width: 110px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+.menu>ul>li>a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+
+
+}
+
+.menu>ul>li:hover {
+    border-bottom: 2px solid blue;
+    box-sizing: border-box;
+
+}
+
+.menu>ul>li:hover .sub {
+    display: block;
+}
+
+.menu>ul>li .sub {
+    position: absolute;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    width: 110px;
+    border-bottom: 3px solid blue;
+
+    display: none;
+}
+
+.menu>ul>li .sub>li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.menu>ul>li .sub>li:hover {
+    font-weight: 700;
+
+}
+
+
+
+
+/* main */
+.main {
+    width: 1900px;
+    height: 500px;
+    background: url(./image/main.png) no-repeat;
+}
+
+.container1 {
+    height: 644px;
+    background: url(./image/bg.png) no-repeat;
+
+}
+
+/* 버튼 */
+.btn>ul {
+    display: flex;
+
+}
+
+/* 진료과목 */
+
+.item>ul {
+    padding-top: 60px;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item>ul>li {
+    padding-bottom: 20px;
+}
+
+/* 뉴스 */
+.news {
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 341px;
+    background-color: #003D7C;
+}
+
+.news .container2 {
+    height: 341px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.news .tiele p:nth-child(1) {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.news .item {
+    width: 284px;
+    height: 234px;
+    background: white;
+    position: relative;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.news .container2 .title>p {
+    color: white;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.news .container2 .title p:nth-child(1) {
+    font-size: 40px;
+    font-weight: 900;
+    padding-bottom: 40px;
+
+}
+
+.news .container2 .item .title {
+    position: absolute;
+    top: -18px;
+    left: 38px;
+    background: #0073DE;
+    width: 83px;
+    height: 32px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+    color: white;
+}
+
+.news .item p:nth-child(2) {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 30px 0;
+    line-height: 30px;
+
+}
+
+
+
+
+/* 의사소개 */
+.m4 {
+    position: relative;
+    margin: 0 auto;
+    height: 621px;
+    width: 1200px;
+    background-image: url(./image/m4_background.png);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+}
+
+.m4 .m4-0 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.m4 .m4-1 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 100px;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.m4 .m4-1 span {
+    color: #D66190;
+}
+
+.m4 .m4-2 {
+    margin-left: 20px;
+}
+
+.m4 .m4-2 .pourple {
+    color: purple;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.m4 .m4-2 h4 {
+    font-size: 30px;
+}
+
+.m4 .m4-2-1 img {
+    width: 400px;
+    height: 500px;
+}
+
+.m4 .m4-3 {
+    line-height: 40px;
+}
+
+.m4 .m4-4 {
+    width: 1200px;
+    position: absolute;
+    bottom: -60px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.m4 .m4-4 img {
+    width: 92px;
+    height: 112px;
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+}
+
+.m4 .m4-4 img:hover {
+    background-color: darkgrey;
+}
+
+
+/* 푸터위 */
+
+.content6 {
+    margin-top: 100px;
+    width: 1900px;
+    height: 431px;
+    background: url(./image/contnet6_bg.png);
+    background-repeat: no-repeat;
+
+}
+
+.content6 .obj_group {
+    display: flex;
+    height: 431px;
+    width: 862px;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+.obj1,.obj3, .obj5{
+    transform: translateY(-30px);
+}
+
+.obj2,.obj4 {
+    transform: translateY(30px);
+}
+
+
+
+
+/* 푸터 */
+.bg {
+    background: #F5F5F5;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.footer {
+    line-height: 30px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.footer ul {
+    font-weight: bold;
+    display: flex;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.footer ul>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer .f0 {
+    display: flex;
+}
+
+.footer .f3 {
+    margin-bottom: 20px;
+    width: 50%;
+    margin: 0;
+}
+
+.footer .f4 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 15%;
+    margin-left: 20px;
+}
+
+.footer .f5 {
+    margin-left: 200px;
+    width: 45%;
+    margin: 0;
+}
+
+.footer .f5 .f5-1 {
+    color: black;
+    font-weight: bold;
+}
+
+.footer .f5 .f5-2 {
+    color: #D66190;
+    font-weight: bold;
+}
