@@ -1,0 +1,504 @@
+@font-face {
+  font-family: 'IBMPlexSansKR-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NEXON Lv1 Gothic OTF';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NEXON Lv2 Gothic Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.wrap {
+  width: 1900px;
+  margin: 0 auto;
+  font-family: 'Noto Sans KR', sans-serif;
+  
+}
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+
+}
+
+.wrap .top_menu_b {
+  margin: 0 auto;
+  line-height: 61.5px;
+  width: 1900px;
+  height: 61.5px;
+  background-color: #265C9A;
+}
+
+.top_menu {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.top_menu .top_m1 {
+  justify-content: space-between;
+}
+
+.top_menu .top_m1 ul {
+  list-style: none;
+  display: flex;
+}
+
+.top_menu .top_m1 ul li a {
+  color: white;
+  margin-right: 50px;
+  text-decoration: none;
+}
+
+.top_menu .top_m2 {
+  justify-content: space-between;
+}
+
+.top_menu .top_m2 ul {
+  list-style: none;
+  display: flex;
+}
+
+.top_menu .top_m2 ul li a {
+  color: white;
+  margin-left: 50px;
+  text-decoration: none;
+
+}
+
+/* nav */
+.nav {
+  line-height: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .logo {
+  height: 100px;
+  line-height: 150px;
+}
+
+.nav .logo img {
+  width: 170px;
+  height: 65.57px;
+}
+
+.nav .nav_list ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .nav_list ul li {
+  height: 70px;
+  width: 80px;
+  margin-left: 50px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.nav .nav_list ul li a{
+  color: black;
+  text-decoration: none;
+}
+
+.nav .nav_list ul li:hover {
+  font-weight: 700;
+  border-bottom: 2px solid #009849;
+}
+
+
+/* 네비_검색창 */
+
+.nav .search {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.nav .search .list{
+  width: 100px;
+  display: block;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.nav .search .list img {
+  padding-left: 20px;
+}
+
+.nav .search .list {
+  border-bottom: 2px solid #265C9A;
+  margin-bottom: 25px;
+}
+
+.nav .search .input {
+  margin-left: 10px;
+  height: 73.33px;
+  line-height: 95px;
+  border-bottom: 2px solid #265C9A;
+}
+
+#uid {
+  border: none;
+  outline: none;
+}
+
+.main{
+  height: 780px;
+  background: url(../img/main_bg.png);
+  background-repeat: no-repeat;
+  position: relative;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.main>img:nth-child(1){
+  position: absolute;
+  top: 30px;
+  right: 300px;
+  animation: rotate 2s infinite;
+  animation-direction: alternate;
+
+}
+
+@keyframes rotate{
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(60px);
+  }
+}
+
+.main>img:nth-child(2){
+  position: absolute;
+  top: 490px;
+  left: -100px;
+  z-index: 1;
+  animation: rotate2 2s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes rotate2{
+  from{
+    transform: translateX(-10px) translateY(0);
+  }
+  to{
+    transform: translateX(80px) translateY(20px);
+  }
+}
+
+.main>img:nth-child(3){
+  position: absolute;
+  top: 625px;
+  right: -160px;
+  z-index: 1;
+  animation: rotate3 2s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes rotate3{
+  from{
+    transform: scale(.8);
+  }
+  to{
+    transform: scale(1.05);
+  }
+}
+
+
+.main>img:nth-child(4){
+  position: absolute;
+  top: 217px;
+  right: -191px;
+  animation: rotate4 2s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes rotate4{
+  from{
+    transform:  translateY(0);
+  }
+  to{
+    transform:  translateY(20px);
+  }
+}
+
+.main .text{
+  position: absolute;
+  left: 400px;
+  top: 120px;
+  z-index: 2;
+}
+
+.main .text >p:nth-child(2){
+ font-size: 70px;
+ font-weight: bolder;  
+ font-family: 'Noto Sans KR', sans-serif;
+ letter-spacing: -2px;
+ line-height: 90px;
+ margin-top: 30px;
+}
+
+.main .text >p:nth-child(3){
+  padding-left: 10px;
+  margin-top: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+}
+
+.content1{
+  height: 600px;
+  background: url(../img/contents1_bg.png);
+  position: relative;
+  z-index: 0;
+  box-sizing: border-box;
+}
+
+.content1>img:nth-child(1){
+  position: absolute;
+  top: 373px;
+  left: 100px;
+}
+
+
+.content1> img:nth-child(2){
+  position: absolute;
+  right: -10px;
+}
+
+.content1 .item{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content1 .item .text p:nth-child(1){
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.content1 .item .text p:nth-child(1) > span{
+  color: #FAD000; 
+}
+
+.content1 .item .text p:nth-child(2){
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 34px;
+  margin-bottom: 40px;
+}
+
+/* 2. 스마트 에듀 */
+.content2{
+  height: 820px;
+  position: relative;
+}
+
+.content2 .bg{
+  top: 300px;
+  height: 450px;
+  position: absolute;
+  background: url(../img/content2_bg.png) repeat;
+  animation-name: wave;
+  animation-duration: normal;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  z-index: 0;
+}
+
+@keyframes wave {
+  from{
+    background-position-x:0;
+  }
+	to{
+    background-position-x:-430px;}
+  }
+
+.content2 > img:nth-child(1){
+  position: absolute;
+  top: 429px;
+  left: 300px;
+  z-index: 2;
+}
+
+.content2 > img:nth-child(2){
+  position: absolute;
+  top: 541px;
+  left: 1429px;
+  z-index: 2;
+}
+.content2 .item{
+  left: 450px;
+  top: 100px;
+  position: absolute;
+  z-index: 1;
+}
+
+.content2 .item .text p:nth-child(1){
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.content2 .item .text p:nth-child(2){
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 34px;
+}
+
+.content2 .item .img{
+  margin-top: 30px;
+}
+
+
+/*  */
+.content3{
+  height: 736px;
+  background: url(../img/contents3_bg.png);
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+  padding-top: 50px;
+}
+
+.content3 > p:nth-child(1){
+  color: #265C9A;
+  font-size: 19px;
+  font-weight: 400;
+  
+}
+.content3 > p:nth-child(2){
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.content3 img{
+  top: 80px;
+  right: 350px;
+  position: absolute;
+}
+
+.content3 ul{
+  width: 1200px;
+  height: 414px;
+  background: #FAD000;
+  border-radius: 107px;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content3 ul li{
+  width: 209px;
+  height: 279px;
+
+}
+
+.content3 ul > a:nth-child(1){
+  border-radius: 51px 0 0 51px;
+  background:url(../img/content3-1.png);
+  margin-right: 5px;
+  border: 2px solid white;
+}
+
+.content3 ul a:nth-child(2){
+  background:url(../img/content3-2.png);
+  margin-right: 5px;
+  border: 2px solid white;
+}
+
+.content3 ul a:nth-child(3){
+  background:url(../img/content3-3.png);
+  margin-right: 5px;
+  border: 2px solid white;
+}
+
+.content3 ul a:nth-child(4){
+  background:url(../img/content3-4.png);
+  margin-right: 5px;
+  border: 2px solid white;
+}
+
+
+.content3 ul a:nth-child(5){
+  border-radius: 0 51px 51px 0;
+  background:url(../img/content3-5.png);
+  border: 2px solid white;
+}
+
+
+/* 푸터 */
+.footer{
+  background-color: #F5F5F5;
+}
+
+.footer1{
+  display: flex;
+  line-height: 80px;
+}
+
+.footer1 a{
+  margin: 20px;
+  text-decoration: none;
+  color: #265C9A;
+  font-weight: 500;
+
+}
+
+.footer2{
+  display: flex;
+  line-height: 30px;
+}
+
+.footer2 p{
+  width: 1100px;
+  font-size: 12px;
+}
+
+.footer2 img{
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+
+}
+
+.footer3{
+  display: flex;
+  line-height: 30px;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.footer3 p{
+  font-size: 10px;
+  font-family: 'NEXON Lv1 Gothic OTF';
+}
+
+.footer3 img{
+  height: 30px;
+}
