@@ -3878,7 +3878,7 @@ strong {
 
 .intro-card-heading.intro-card-heading--scale {
   position: absolute;
-  left: 64px;
+  left: 290px;
   top: 64px;
   right: auto;
   bottom: auto;
@@ -4826,35 +4826,59 @@ strong {
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
-  align-items: flex-end
+  align-items: flex-end;
+  overflow: hidden;
 }
 
 .intro-card-scale-bar {
-  width: 10%;
+  width: 15%;
   max-width: 54px;
-  border-radius: 10px 10px 0 0;
+  border-radius: 50px 50px 0 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5b9fcf), to(#1f338e));
   background-image: linear-gradient(180deg, #5b9fcf, #1f338e)
 }
 
 .intro-card-scale-bar.intro-card-scale-bar--1 {
-  height: 20%
+  height: 90%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FC3DC5), to(#3F1631));
+  background-image: linear-gradient(180deg, #FC3DC5, #3F1631)
 }
 
+
 .intro-card-scale-bar.intro-card-scale-bar--2 {
-  height: 30%
+  height: 80%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#37C5FF), to(#28253A));
+  background-image: linear-gradient(180deg, #37C5FF, #28253A)
 }
 
 .intro-card-scale-bar.intro-card-scale-bar--3 {
-  height: 45%
+  height: 70%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF7E1B), to(#41322A));
+  background-image: linear-gradient(180deg, #FF7E1B, #41322A)
 }
 
 .intro-card-scale-bar.intro-card-scale-bar--4 {
-  height: 67.5%
+  height: 60%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#D392FF), to(#19003E));
+  background-image: linear-gradient(180deg, #D392FF, #19003E)
 }
 
 .intro-card-scale-bar.intro-card-scale-bar--5 {
-  height: 100%
+  height: 70%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E079FF), to(#19003E));
+  background-image: linear-gradient(180deg, #E079FF, #19003E)
+}
+
+.intro-card-scale-bar.intro-card-scale-bar--6 {
+  height: 60%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#0C73B8));
+  background-image: linear-gradient(180deg, #ffffff, #0C73B8)
+}
+
+.intro-card-scale-bar.intro-card-scale-bar--7 {
+  height: 80%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#F1672C), to(#E55126));
+  background-image: linear-gradient(180deg, #ffe8df, #E55126)
 }
 
 .intro-card-dev-speed-wrap {
@@ -5192,7 +5216,8 @@ strong {
   }
 
   .intro-card.intro-card--scale {
-    height: 450px
+    height: 450px;
+    overflow: hidden;
   }
 
   .intro-card.intro-card--stats-cell {
@@ -6129,6 +6154,8 @@ strong {
 
 .introduce .t1:nth-child(2) >h4{
  margin-top: 20px;
+ margin-bottom: 15px;
+ 
 }
 
 
