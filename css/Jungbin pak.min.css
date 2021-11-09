@@ -2591,8 +2591,8 @@ strong {
 }
 
 .section {
-  padding-top: 140px;
-  padding-bottom: 140px
+  padding-top: 100px;
+  padding-bottom: 100px
 }
 
 .section.section--gray.section--faq {
@@ -2605,8 +2605,8 @@ strong {
 }
 
 .section.section--manifest {
-  padding-top: 100px;
-  padding-bottom: 160px
+  padding-top: 0px;
+  padding-bottom: 40px
 }
 
 .section.section--faq {
@@ -2614,17 +2614,17 @@ strong {
 }
 
 .section-heading {
-  max-width: 890px;
+  max-width: 1080px;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 92px;
+  font-size: 50px;
   line-height: 1.1;
-  letter-spacing: -.045em
+  letter-spacing: -.045em;
 }
 
 .section-heading.section-heading--faq {
   max-width: none;
-  font-size: 80px;
+  font-size: 40px;
   text-align: center
 }
 
@@ -2763,9 +2763,9 @@ strong {
 
 .section-header {
   width: 90%;
-  max-width: 980px;
+  max-width: 1380px;
   margin-right: auto;
-  margin-bottom: 142px;
+  margin-bottom: 50px;
   margin-left: auto;
   text-align: left
 }
@@ -2782,7 +2782,7 @@ strong {
 }
 
 .section-header.section-header--faq {
-  margin-bottom: 64px
+  margin-bottom: 30px
 }
 
 .workflow-card {
@@ -3648,7 +3648,7 @@ strong {
 
 .intro-card {
   position: relative;
-  padding: 64px;
+  padding: 30px;
   border: 1px solid hsla(0, 0%, 51.4%, .16);
   border-radius: 28px;
   background-color: #fff
@@ -3820,7 +3820,7 @@ strong {
   margin-top: 0;
   padding-top: 8px;
   padding-bottom: 8px;
-  font-size: 92px;
+  font-size: 40px;
   line-height: 1.1;
   letter-spacing: -.045em;
   -webkit-background-clip: text;
@@ -3844,7 +3844,7 @@ strong {
 }
 
 .fluid-gradient-heading.fluid-gradient-heading--hero.cc-en {
-  font-size: 103px
+  font-size: 40px
 }
 
 .intro-card-heading {
@@ -3893,9 +3893,9 @@ strong {
 .intro-stats-figure {
   display: inline;
   margin-left: -2px;
-  font-size: 64px;
+  font-size: 40px;
   line-height: 1;
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: -.05em
 }
 
@@ -4645,8 +4645,8 @@ strong {
 
 .project-title {
   margin-top: 0;
-  margin-bottom: 0;
-  font-size: 64px;
+  margin-bottom: 20;
+  font-size: 30px;
   line-height: 1.2;
   letter-spacing: -.045em
 }
@@ -6106,4 +6106,35 @@ strong {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+}
+
+
+.introduce{
+  display: flex;
+  justify-content: space-between;
+}
+
+.introduce .t1:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.introduce .t1:nth-child(1) >h4{
+  margin-top: -10px;
+  
+ }
+
+
+.introduce .t1:nth-child(2) >h4{
+ margin-top: 20px;
+}
+
+
+.introduce .t1 > P {
+  font-size: 17px;
+  margin-top: 10px;
+  font-weight: 400;
+  letter-spacing: -1px;
 }
