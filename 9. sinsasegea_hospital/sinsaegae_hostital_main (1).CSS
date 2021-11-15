@@ -292,6 +292,7 @@
 /* 푸터위 */
 
 .content6 {
+    overflow: hidden;
     margin-top: 100px;
     width: 1900px;
     height: 431px;

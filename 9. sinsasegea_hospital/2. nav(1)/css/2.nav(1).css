@@ -1,0 +1,250 @@
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.wrap {
+  width: 1900px;
+  margin: 0 auto;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* 해더 */
+
+/* topmenu */
+.topmenu {
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  justify-content: flex-end;
+  background: #0054D1;
+  padding-right: 48px;
+}
+
+.topmenu>ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.topmenu>ul>li {
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.topmenu>ul>li>a {
+  text-decoration: none;
+  color: white;
+}
+
+/* nav */
+
+.menu {
+  display: flex;
+  height:80px;
+  line-height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dddddd;
+
+}
+
+.menu .logo{
+  padding-top: 20px;
+}
+
+.menu>ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu>ul>li {
+  margin-left: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+  position: relative;
+  width: 110px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+
+.menu>ul>li>a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+
+
+}
+
+.menu>ul>li:hover {
+  border-bottom: 2px solid blue;
+  box-sizing: border-box;
+
+}
+
+.menu>ul>li:hover .sub{
+  display: block;
+}
+
+.menu>ul>li .sub{
+  position: absolute;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  width: 110px;
+  border-bottom: 3px solid blue;
+
+  display: none;
+}
+
+.menu>ul>li .sub>li a{
+  text-decoration: none;
+  color: black;
+
+}
+
+.menu>ul>li .sub>li:hover {
+  font-weight: 700;
+
+}
+
+section{
+  background: url(../img/reservation_bg.png);
+  height: 1909px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+section .title{
+  background: url(../img/nav\(1\)_bg.png);
+  box-sizing: border-box;
+  height: 250px;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+}
+
+section .title > h1{
+font-size: 45px;
+padding-top: 45px;
+padding-bottom: 45px;
+font-weight: 700;
+}
+
+section .title > p{
+padding-bottom: 25px;
+font-weight: 700;
+}
+
+section .title > p > a{
+  text-decoration: none;
+  color: white;
+}
+
+.contents
+{margin: 0 auto;
+  text-align: center;
+  background: url(../img/bg.png);
+  height: 1545px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.contents > h1{
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: #0054D1;
+  font-weight: 700;
+  line-height: 50px;
+  margin-top: 50px;
+}
+
+.contents > p{
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+
+.text{
+  margin-top: 131px;
+  font-size: 20px;
+  line-height: 56px;
+}
+
+
+
+
+
+
+
+
+
+/* 푸터 */
+
+.bg{
+  background: #F5F5F5;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.footer {
+  line-height: 30px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.footer ul {
+  font-weight: bold;
+  display: flex;
+  list-style: none;
+}
+
+.footer ul li {
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.footer ul> li >a{
+  text-decoration: none;
+  color: black;
+}
+
+.footer .f0 {
+  display: flex;
+}
+
+.footer .f3 {
+  margin-bottom: 20px;
+  width: 50%;
+  margin: 0;
+}
+
+.footer .f4 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  width: 15%;
+  margin-left: 20px;
+}
+
+.footer .f5 {
+  margin-left: 200px;
+  width: 45%;
+  margin: 0;
+}
+
+.footer .f5 .f5-1 {
+  color: black;
+  font-weight: bold;
+}
+
+.footer .f5 .f5-2 {
+  color: #D66190;
+  font-weight: bold;
+}
