@@ -5,12 +5,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/2.nav(1).css">
+  <link rel="stylesheet" href="./css/3. treatment details.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <title>신세계병원</title>
+
+  <link rel="stylesheet" href="jquery-ui.min.css">
+  <link rel="stylesheet" href="jquery-ui.theme.min.css">
+  <link rel="stylesheet" href="jquery-ui.structure.min.css">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="../jquery-ui.min.js"></script>
 </head>
+<script>
+  $(function () {
+    $('ul.tab li').click(function () {
+      var activeTab = $(this).attr('data-tab');
+      $('ul.tab li').removeClass('current');
+      $('.tabcontent').removeClass('current');
+      $(this).addClass('current');
+      $('#' + activeTab).addClass('current');
+    })
+  });
+</script>
+
 
 <body>
 
@@ -48,7 +66,7 @@
 
           </li>
 
-          <li><a href="">진료내용</a>
+          <li><a href="./3. treatment details.html">진료내용</a>
             <ul class="sub">
               <li><a href="">산모</a></li>
               <li><a href="">무흉터 수술</a></li>
@@ -116,35 +134,216 @@
       </div>
 
     </header>
-
-    <!-- section start -->
-    <section class="wrap">
+    <section>
       <div class="title">
-        <h1>인사말</h1>
+        <h1>진료내용</h1>
         <p>고객을 가족으로 대하는, 최초의 여성 병원</p>
-        <p><a href=""><img src="./img/Icon_home.png" alt="">/ 병원소개 / 인사말</a></p>
-      </div>
-      <div class="contents">
-        <h1>' 생명 존중의 시작 '<br>
-          신세계 병원이 앞선 전문의학과 차별화 된 서비스로 다가 갑니다.</h1>
-        <p>방문을 환영합니다. 신세계 병원은 1991년 4월 20일 대구·경북 최초의 여성병원으로 개원 후 지속적인 성장을 거듭하여 약 10만 여명의 새 생명을 탄생시킨 여성병원입니다. <br>
-          신세계 병원은 지금껏 약 2만여건의 복강경 수술을 시행한 병원으로 많은 의료경험과 높은 전문 의료 기술을 가지고 있습니다.</p>
-
-        <img src="./img/ceo.png" alt="">  
-
-        <div class="text">
-          <p>더불어 적극적인 신생아 care system과 병원내 산후 조리원 운영으로 산모님들의 편안함과 안락함을 드리고 <br>
-            있습니다. 또한 내과, 유방외과, 소아청소년과, 마취통증의학과 및 종합건강검진센터와 체계적인 협진 진료 <br>
-            시스템을 통해 건강을 위해 매 순간 순간 열과 성을 다하고 있습니다.앞으로도 변화하는 의료환경에 대비하여 <br> 
-            최선의 의료 서비스 제공을 약속드리며, 지역민들과 같이 하는 병원, 고객의 소리에 귀를 기울려 사랑받고 <br>
-            신뢰받는 신세계 병원이 될 수 있도록 노력하겠습니다.감사합니다.</p>
-        </div>
+        <p><a href=""><img src="./img/Icon_home.png" alt="">/ 진료내용 </a></p>
       </div>
     </section>
+    <div id="container">
+      <ul class="tab">
+
+        <li class="current" data-tab="tab1">
+          <a href="#">산모</a>
 
 
+        </li>
+
+        <li data-tab="tab2">
+          <a href="#">무흉터 수술</a>
+        </li>
+
+        <li data-tab="tab3">
+          <a href="#">산모 및 육아정보</a>
+        </li>
+
+        <li data-tab="tab4">
+          <a href="#">갱년기</a>
+        </li>
+
+        <li data-tab="tab5">
+          <a href="#">갱년기</a>
+        </li>
+
+        <li data-tab="tab6">
+          <a href="#">요실금</a>
+        </li>
+        <li data-tab="tab7">
+          <a href="#">유방 클리닉</a>
+        </li>
+
+      </ul>
+
+      <div id="tab1" class="tabcontent current">
+        <h1>고위험 임신이란 임신 전 혹은 임신 중 발생한 상황으로 인하여 산모나 태아에 나쁜 영향을 미치는 경우를 말하며 전체 임신의 20~30%에 해당합니다. <br>
+          고위험 임신의 경우 합병증으로 인하여 산모와 태아는 치명적인 영향을 받을 수 있으므로 이를 방지하기 위해 산모와 태아에 미치는  <br>
+          나쁜 요소를 임신초기에 발견하여 적절한 대처를 하며 또, 다음 임신에서 다시 나타나지 않도록 철저한 산전관리를 시행하여야 합니다.</h1>
+
+        <div id="accordion">
+          <h3>고령 임신</h3>
+          <div class="item o">
+            <div class="text">
+              <h4>출산 당시 산모 나이가 많아질수록 태아의 염색체 이상 등 기형이 증가하며, 만 35세를 기준으로
+                <br> 그 위험도가 증가하여 만 35세 이상을 고령 임신으로 정의 합니다. </h4>
+              <p>고령 임신의 경우 태아 염색체 이상 및 기형 발생이 증가할 뿐 아니라, 유산, 조기진통 및 조산, 임신성 <br>
+                고혈압 및 임신성 당뇨 등 내과적 질환의 발생 위험도 증가하여 임신 중 주의 깊은 산전 진찰이 필요합니다. <br>
+                최근 여성의 사회 진출이 늘어나면서 결혼 연령이 늦어지고, 임신 및 출산의 연령이 고령화 되고 있습니다.</p>
+
+              <p>고령 임신이 늘어남으로써 고위험 임신이 증가하는 것은 어쩔 수 없는 사회현상이 되었습니다. <br>
+                그러나, 적절한 산전 관리를 시행하여 안전하고 건강한 출산을 하는 것이 무엇보다 중요합니다.</p>
+            </div>
+            <div class="img">
+              <img src="./img/1..png" alt="">
+            </div>
+          </div>
+
+          <h3>고위험 임신군</h3>
+          <div class="item2">
+            <p><span>1.</span> 산모 나이가 19세 이하이거나 35세 이상인 경우 </p>
+            <p><span>2.</span> 본인이나 직계가족의 유전적 질환이나 선천성 기형 병력 </p>
+            <p><span>3.</span> 임신 중 감염 : 풍진, 수두, C형간염, 매독, HIV, 거대세포바이러스 등 </p>
+            <p> <span>4.</span> 흡연자, 알코올 중독인 경우 </p>
+            <p> <span>5.</span> 과도한 저체중(BMI 19.8 이하) 또는 비만(BMI 26 이상)인 경우 </p>
+            <p> <span>6.</span> 산모가 특이 혈액형 인 경우 (RH-) </p>
+            <p> <span>7.</span> 자궁 근종이나 자궁 기형이 있는 경우 </p>
+            <p><span>8.</span> 내과적인 질환을 동반하고 있는 경우 : 당뇨, 고혈압, 심장질환, 간질, 신장질환, 갑상성 질환, 자가 면역 질환 등 </p>
+            <p> <span>9.</span> 복용 중인 약이 있는 경우 : 간질약, 면역억제제, 항응고제 등 </p>
+            <p> <span>10.</span> 과거 임신 중 합병증이 발생하였던 경우 : 기형아 또는 염색체 이상 태아를 임신했던 경우, 반복적 유산, 조기 진통 혹은 조산, 자궁내 태아사망, 임신 중
+              고혈압, 임신성 당뇨 </p>
+            <p> <span>11.</span> 남편이 유전성 질환을 가지고 있거나 가족력이 있는 경우 </p>
+            <p> <span>12.</span> 현재 임신 중 다태 임신, 임신성 고혈압 혹은 당뇨, 양수 과소 혹은 과다증, 조기 진통, 전치태반 등이 발생한 경우 </p>
+          </div>
+          <h3>임신 시기별 병원 진찰 간격 및 진찰 내용</h3>
+          <div class="item">
+            <p>
+              <table>
+                  <tr class="t">
+                    <td>임신 주 수</td>
+                    <td>진찰 간격</td>
+                    <td>진찰 내용</td>
+                  </tr>
+                  <tr>
+                    <td class="t">~ 12주</td>
+                    <td>2 ~ 4주마다</td>
+                    <td>
+                      <ul>
+                       <li><span>·</span>  혈압, 체중, 키 측정</li>
+                       <li><span>·</span> 임신 초기 검사</li>
+                       <li><span>·</span> 1차 기형아 검사</li>
+                       <li><span>·</span> 일반 초음파 검사</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="t">12 ~ 28 주</td>
+                    <td>4 주마다</td>
+                    <td>
+                      <ul>
+                       <li> <span>·</span> 혈압, 체중, 키 측정</li>
+                       <li><span>·</span> 임신 초기 검사</li>
+                       <li><span>·</span> 2차 기형아 검사</li>
+                       <li><span>·</span> 1차 및 2차 정밀초음파</li>
+                       <li><span>·</span> 임신성 당뇨 검사</li>
+                       <li><span>·</span> 일반 초음파 검사</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="t">28 ~ 36 주</td>
+                    <td>2 주마다</td>
+                    <td>
+                      <ul>
+                       <li><span>·</span> 혈압, 체중 측정</li>
+                       <li><span>·</span> 태동 검사</li>
+                       <li><span>·</span> 분만 전 검사</li>
+                       <li><span>·</span> 일반 초음파 검사</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="t">36 주</td>
+                    <td>매주</td>
+                    <td>
+                      <ul>
+                       <li><span>·</span> 혈압, 체중 측정</li>
+                       <li><span>·</span> 일반 초음파 검사</li>
+                       <li><span>·</span> 태동 검사</li>
+                      </ul>
+                    </td>
+                  </tr>
+              
+                
+               
+              </table>
+            </p>
+          </div>
+
+        </div>
+        <script>
+          $("#accordion").accordion({
+            collapsible: true,
+
+            heightStyle: "content"
+          });
+        </script>
+
+      </div>
+
+      <div id="tab2" class="tabcontent">
 
 
+      </div>
+
+      <div id="tab3" class="tabcontent">
+      </div>
+      <div id="tab4" class="tabcontent">
+      </div>
+      <div id="tab5" class="tabcontent">
+      </div>
+      <div id="tab6" class="tabcontent">
+      </div>
+      <div id="tab7" class="tabcontent">
+      </div>
+
+    </div>
+
+    <!-- TOP BTN[S] -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <a id="MOVE_TOP_BTN" href="#">
+      <img src="../image/topbutton.png" alt="">
+    </a>
+
+    <style>
+      a#MOVE_TOP_BTN {
+        position: fixed;
+        right: 100px;
+        bottom: 100px;
+        display: none;
+        z-index: 10;
+      }
+    </style>
+    <script>
+      $(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 400) {
+            $('#MOVE_TOP_BTN').fadeIn();
+          } else {
+            $('#MOVE_TOP_BTN').fadeOut();
+          }
+        });
+
+        $("#MOVE_TOP_BTN").click(function () {
+          $('html, body').animate({
+            scrollTop: 0
+          }, 400);
+          return false;
+        });
+      });
+    </script>
+
+    <!-- TOP BTN[E] -->
 
 
     <!--푸터-->

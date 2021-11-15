@@ -170,18 +170,207 @@ section .title > p > a{
 }
 
 
-.text{
+.contents .text{
   margin-top: 131px;
   font-size: 20px;
   line-height: 56px;
 }
 
 
+section{
+  font-family: 'Noto Sans KR', sans-serif;
+  height: auto;
+}
+
+section .title{
+  background: url(../img/bg-1.png);
+  box-sizing: border-box;
+  height: 250px;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+}
+
+section .title > h1{
+font-size: 35px;
+padding-top: 45px;
+padding-bottom: 45px;
+font-weight: 700;
+}
+
+section .title > p{
+padding-bottom: 25px;
+font-weight: 500;
+vertical-align: middle ;
+}
+
+section .title > p > a{
+  text-decoration: none;
+  color: white;
+}
 
 
 
 
+#container {
+  width:1200px;
+  margin:0 auto;
+}
+.tab {
+  list-style: none;
+  margin-top: 50px;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
 
+.tab > li {
+border-bottom:2px solid rgb(228, 228, 228);
+width:400px;	float: left;
+box-sizing: border-box;
+}
+
+.tab > li > a {
+  display: inline-block;
+  color:black;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 0px;
+  font-size: 17px;
+  transition:0.3s;border-bottom:0;
+}
+
+.tabcontent {
+  display: none;
+        padding: 6px 12px;
+  color:black;
+}
+
+ul.tab li.current{
+       
+background: #F5F5F5;
+border-bottom: 3px solid #FFA200;
+box-sizing: border-box;
+font-weight: 700;
+}
+    ul.tab li.current a{
+      color:black;
+       
+        }
+    
+.tabcontent.current {
+  display: block;
+}
+
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7{
+  height: 1000px;
+}
+
+
+
+#tab1 > h1{
+  font-size: 15px;
+  padding: 20px 0 20px 50px;
+  text-align: left;
+ margin: 0 auto;
+ line-height: 25px;
+ color: gray;
+ 
+}
+
+
+
+.ui-state-active {
+  height: 50px;
+ cursor: pointer;
+ border-radius: 50px   50px 0 0;
+ transition: .3s;
+}
+#accordion > h3{
+  margin: 10px 0;
+  background: #ffbf4f;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .3s;
+}
+
+#accordion .o{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#accordion .text{
+
+  font-size: 15px;
+  line-height: 30px;
+
+}
+
+#accordion .text > h4{
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.item2 {
+  padding: 15px 0;
+}
+.item2 > p{
+  font-size: 15px;
+  margin: 20px 0 20px 20px;
+}
+
+.item2 > p > span{
+  color: #0054D1;
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+table  tr{
+  width: 1200px;
+  border-bottom: 1px solid #d1d1d1;
+
+
+}
+
+table  tr:nth-child(1) td{
+  background: #d5d5d5;
+}
+
+table .t {
+  font-weight: 700;
+  background: #F8F8F8;
+  height: 60px;
+  line-height: 60px;
+  align-items: center;
+  vertical-align: middle;
+}
+
+table  td{
+  background: #fdfdfd;
+  width: 400px;
+  text-align: center;
+
+}
+
+table  td ul li{
+  text-align: left;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+table  td ul li > span{
+  color: #0044aa;
+  font-size: 20px;
+  font-weight: 700;
+}
 
 
 /* 푸터 */

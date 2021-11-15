@@ -13,6 +13,42 @@
 </head>
 
 <body>
+      <!-- TOP BTN[S] -->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+      <a id="MOVE_TOP_BTN" href="#">
+        <img src="../image/topbutton.png" alt="">
+      </a>
+  
+      <style>
+        a#MOVE_TOP_BTN {
+          position: fixed;
+          right: 100px;
+          bottom: 300px;
+          display: none;
+          z-index: 10;
+        }
+      </style>
+      <script>
+        $(function () {
+          $(window).scroll(function () {
+            if ($(this).scrollTop() > 500) {
+              $('#MOVE_TOP_BTN').fadeIn();
+            } else {
+              $('#MOVE_TOP_BTN').fadeOut();
+            }
+          });
+  
+          $("#MOVE_TOP_BTN").click(function () {
+            $('html, body').animate({
+              scrollTop: 0
+            }, 400);
+            return false;
+          });
+        });
+      </script>
+  
+      <!-- TOP BTN[E] -->
   <script>
     $(function () {
       $('ul.tab li').click(function () {
