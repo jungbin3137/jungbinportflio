@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/5. nav(5).css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <title>신세계병원</title>
+
+  <link rel="stylesheet" href="jquery-ui.min.css">
+  <link rel="stylesheet" href="jquery-ui.theme.min.css">
+  <link rel="stylesheet" href="jquery-ui.structure.min.css">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="../jquery-ui.min.js"></script>
+
+  <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        /* height: 100%; */
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 1200px;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        width: auto;
+        overflow: hidden;
+        height: 600px;
+        /* margin: 0 20px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        margin: 0 10px;
+        /* height: 100%; */
+        object-fit: cover;
+        
+      }
+    </style>
+
+  <!-- top버튼 -->
+  <script>
+    $(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 400) {
+          $('#MOVE_TOP_BTN').fadeIn();
+        } else {
+          $('#MOVE_TOP_BTN').fadeOut();
+        }
+      });
+
+      $("#MOVE_TOP_BTN").click(function () {
+        $('html, body').animate({
+          scrollTop: 0
+        }, 400);
+        return false;
+      });
+    });
+  </script>
+
+</head>
+<script>
+  $(function () {
+    $('ul.tab li').click(function () {
+      var activeTab = $(this).attr('data-tab');
+      $('ul.tab li').removeClass('current');
+      $('.tabcontent').removeClass('current');
+      $(this).addClass('current');
+      $('#' + activeTab).addClass('current');
+    })
+  });
+</script>
+<style>
+  a#MOVE_TOP_BTN {
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    display: none;
+    z-index: 10;
+  }
+</style>
+
+
+<!-- TOP BTN[E] -->
+
+<body>
+
+
+  <div class="wrap">
+    <!--해더-->
+    <header>
+
+      <div class="topmenu">
+        <ul class="inner">
+          <li><a href="">로그인</a></li>
+          <li><a href="">회원가입</a></li>
+          <li><a href="">의료상담</a></li>
+          <li><a href="">고객의 소리</a></li>
+        </ul>
+      </div>
+
+      <div class="menu inner">
+        <div class="logo">
+          <a href="../sinsaegae_hostital_main (1).HTML">
+            <img src="../icon/logo.png" alt="로고">
+          </a>
+        </div>
+        <ul>
+          <li><a href="../2. nav(1)/2.nav(1).html">병원소개</a>
+
+            <ul class="sub">
+              <li><a href="../2. nav(1)/2.nav(1).html">인사말</a></li>
+              <li><a href="../2. nav(2)_history/nav(2)_history.html">병원소개</a></li>
+              <li><a href="">미션/비젼</a></li>
+              <li><a href="../2. nav(3)_doctor/nav(3)_doctor.html">의료진소개</a></li>
+              <li><a href="">진료예약</a></li>
+              <li><a href="">찾아오시는길</a></li>
+            </ul>
+
+          </li>
+
+          <li><a href="../3. treatment details/3. treatment details.html">진료내용</a>
+            <ul class="sub">
+              <li><a href="../3. treatment details/3. treatment details.html">산모</a></li>
+              <li><a href="../3. treatment details/3. treatment details.html">무흉터 수술</a></li>
+              <li><a href="../3. treatment details/3. treatment details.html">육아정보</a></li>
+              <li><a href="../3. treatment details/3. treatment details.html">갱년기</a></li>
+              <li><a href="../3. treatment details/3. treatment details.html">요실금</a></li>
+              <li><a href="../3. treatment details/3. treatment details.html">유방클리닉</a></li>
+
+            </ul>
+          </li>
+
+          <li><a href="">소아청소년과</a>
+            <ul class="sub">
+
+              <li><a href="">예방접종</a></li>
+              <li><a href="">영유아검진</a></li>
+              <li><a href="">신생아질환</a></li>
+
+            </ul>
+          </li>
+          <li><a href="../4. nav(4)/4. nav(4).html">종합건강검진</a>
+            <ul class="sub">
+
+              <li><a href="../4. nav(4)/4. nav(4).html">종합건강검진</a></li>
+              <li><a href="">국민건강보험</a></li>
+              <li><a href="">공무원 채용</a></li>
+
+            </ul>
+          </li>
+
+          <li><a href="./5. nav(5).html">산후조리원</a>
+            <ul class="sub">
+
+              <li><a href="./5. nav(5).html">조리원 소개</a></li>
+              <li><a href="./5. nav(5).html">시설안내</a></li>
+              <li><a href="./5. nav(5).html">이용안내 및 예약</a></li>
+              <li><a href="./5. nav(5).html"></a></li>
+
+            </ul>
+          </li>
+
+          <li><a href="">산모교실</a>
+            <ul class="sub">
+
+              <li><a href="">산모교실</a></li>
+              <li><a href="">교실일정</a></li>
+
+            </ul>
+          </li>
+
+          <li><a href="">커뮤니티</a>
+            <ul class="sub">
+
+              <li><a href="">공지사항</a></li>
+              <li><a href="">의료상담</a></li>
+              <li><a href="">고객의소리</a></li>
+              <li><a href="">진료후기</a></li>
+              <li><a href="">F&A</a></li>
+              <li><a href="">신생아포토</a></li>
+            </ul>
+
+          </li>
+
+        </ul>
+      </div>
+
+    </header>
+    <section>
+      <div class="title">
+        <h1>산후 조리원</h1>
+        <p>고객을 가족으로 대하는, 최초의 여성 병원</p>
+        <p><a href=""><img src="./img/Icon_home.png" alt="">/ 산후 조리원 </a></p>
+      </div>
+    </section>
+
+    <div id="container">
+
+      <ul class="tab">
+        <li class="current" data-tab="tab1">
+          <a href="#">조리원 소개</a>
+        </li>
+        <li data-tab="tab2">
+          <a href="#">시설 안내</a>
+        </li>
+        <li data-tab="tab3">
+          <a href="#">이용안내 및 예약</a>
+        </li>
+      </ul>
+
+    </div>
+
+    <div id="tab1" class="tabcontent current">
+      <ul class="box">
+        <li><img src="./img/box1.png" alt=""></li>
+        <li><img src="./img/box2.png" alt=""></li>
+        <li><img src="./img/box3.png" alt=""></li>
+        <li><img src="./img/box4.png" alt=""></li>
+        <li><img src="./img/box5.png" alt=""></li>
+      </ul>
+    </div>
+
+    <div id="tab2" class="tabcontent">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper inner">
+          <div class="swiper-slide"><img src="./img/hospital(1).png" alt=""><img src="./img/hospital(2).png" alt=""></div>
+          <div class="swiper-slide"><img src="./img/hospital(3).png" alt=""><img src="./img/hospital(4).png" alt=""></div>
+          <div class="swiper-slide"><img src="./img/hospital(5).png" alt=""><img src="./img/hospital(6).png" alt=""></div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div id="tab3" class="tabcontent">
+    <img src="./img/bg3.png" alt="">
+  </div>
+
+  </div>
+
+  <!-- TOP BTN[S] -->
+  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
+
+  <a id="MOVE_TOP_BTN" href="#">
+    <img src="../image/topbutton.png" alt="">
+  </a>
+
+
+
+
+  <!--푸터-->
+  <footer class="bg wrap">
+    <div class="footer inner">
+      <ul>
+        <li><a href="">개인정보취급방침</a> ┃</li>
+        <li><a href="">이용약관</a> ┃</li>
+        <li><a href="">진료시간</a> ┃</li>
+        <li><a href="">찾아오시는 길</a></li>
+      </ul>
+      <div class="f0">
+        <div class="f3">
+          상호명 : 신세계여성병원 주소 : 대구광역시 북구 동북로 196 <br> 사업자등록번호 : 504-16-23603
+          Tel : 053.954.7771 Fax : 053.954.5932 <br> E-mail : ssghos@naver.com
+          <br> COPYRIGHT© 신세계여성병원. ALL RIGHTS RESERVED.
+        </div>
+        <div class="f4"> 산부인과 응급환자는 <br> 24시간 진료합니다.</div>
+        <div class="f5">
+          <span class="f5-1">진료시간 및 상담</span> <span class="f5-2">053.954.7771</span>
+          <br> 평일09 : 00 ~ 18 : 00 <br>
+          토요일09 : 00 ~ 16 : 00 점심시간13 : 00 ~ 14 : 00 <br>
+          일요일/공휴일09 : 00 ~ 12 : 30 평일 야간진료18 : 00 ~ 20 : 00</div>
+      </div>
+    </div>
+  </footer>
+ <!-- Swiper JS -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".mySwiper", {
+     spaceBetween: 30,
+     centeredSlides: true,
+     autoplay: {
+       delay: 2500,
+       disableOnInteraction: false,
+     },
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+     navigation: {
+       nextEl: ".swiper-button-next",
+       prevEl: ".swiper-button-prev",
+     },
+   });
+ </script>
+</body>
+
+</html>
