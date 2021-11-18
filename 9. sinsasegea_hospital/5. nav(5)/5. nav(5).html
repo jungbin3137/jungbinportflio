@@ -17,53 +17,47 @@
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script src="../jquery-ui.min.js"></script>
 
-  <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-    />
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
 
-    <!-- Demo styles -->
-    <style>
-      html,
-      body {
-        position: relative;
-        /* height: 100%; */
-      }
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-      body {
-        margin: 0;
-        padding: 0;
-      }
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      /* height: 100%; */
+    }
 
-      .swiper {
-        width: 1200px;
-        height: 100%;
-      }
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
-      .swiper-slide {
-        width: auto;
-        overflow: hidden;
-        height: 600px;
-        /* margin: 0 20px; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+    .swiper {
+      width: 1200px;
+      height: 100%;
+    }
 
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        margin: 0 10px;
-        /* height: 100%; */
-        object-fit: cover;
-        
-      }
-    </style>
+    .swiper-slide {
+      width: auto;
+      overflow: hidden;
+      height: 600px;
+      /* margin: 0 20px; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      margin: 0 10px;
+      /* height: 100%; */
+      object-fit: cover;
+
+    }
+  </style>
 
   <!-- top버튼 -->
   <script>
@@ -86,6 +80,7 @@
   </script>
 
 </head>
+
 <script>
   $(function () {
     $('ul.tab li').click(function () {
@@ -97,6 +92,7 @@
     })
   });
 </script>
+
 <style>
   a#MOVE_TOP_BTN {
     position: fixed;
@@ -251,9 +247,12 @@
     <div id="tab2" class="tabcontent">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper inner">
-          <div class="swiper-slide"><img src="./img/hospital(1).png" alt=""><img src="./img/hospital(2).png" alt=""></div>
-          <div class="swiper-slide"><img src="./img/hospital(3).png" alt=""><img src="./img/hospital(4).png" alt=""></div>
-          <div class="swiper-slide"><img src="./img/hospital(5).png" alt=""><img src="./img/hospital(6).png" alt=""></div>
+          <div class="swiper-slide"><img src="./img/hospital(1).png" alt=""><img src="./img/hospital(2).png" alt="">
+          </div>
+          <div class="swiper-slide"><img src="./img/hospital(3).png" alt=""><img src="./img/hospital(4).png" alt="">
+          </div>
+          <div class="swiper-slide"><img src="./img/hospital(5).png" alt=""><img src="./img/hospital(6).png" alt="">
+          </div>
 
         </div>
         <div class="swiper-button-next"></div>
@@ -305,28 +304,28 @@
       </div>
     </div>
   </footer>
- <!-- Swiper JS -->
- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
- <!-- Initialize Swiper -->
- <script>
-   var swiper = new Swiper(".mySwiper", {
-     spaceBetween: 30,
-     centeredSlides: true,
-     autoplay: {
-       delay: 2500,
-       disableOnInteraction: false,
-     },
-     pagination: {
-       el: ".swiper-pagination",
-       clickable: true,
-     },
-     navigation: {
-       nextEl: ".swiper-button-next",
-       prevEl: ".swiper-button-prev",
-     },
-   });
- </script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 
 </html>

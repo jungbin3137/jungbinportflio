@@ -5,14 +5,13 @@
   font-style: normal;
 }
 
-@font-family: 'Noto Sans KR', sans-serif;
+
 
 .wrap {
   width: 1900px;
   margin: 0 auto;
-  font-family: 'Roboto', sans-serif
-}
 
+}
 
 .inner {
   width: 1200px;
@@ -20,17 +19,23 @@
 
 }
 
+.bar{
+  width: 900px;
+}
+
 /* 해더 */
 header {
+  width: 1900px;
   height: 140px;
   background: #F6F5F0;
+  margin: 0 auto;;
 }
 
 .nav {
   display: flex;
 }
 
-.nav img {
+.nav  img {
   width: 300px;
   height: 83px;
   margin-top: 40px;
@@ -40,7 +45,7 @@ header {
   display: flex;
   margin-right: 65px;
   flex-direction: row-reverse;
-
+  width: 885px;
 }
 
 .nav .bar .topmenu>li {
@@ -52,24 +57,27 @@ header {
 .nav .bar .topmenu>li>a {
   text-decoration: none;
   color: rgb(56, 29, 4);
-  font-weight: 500;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
 
+}
+
+.bar{
+  width: 900px;
 }
 
 /* mein */
 .nav .bar #menulist {
   display: flex;
   width: 900px;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-left: 50px;
 }
 
 
 .nav .bar #menulist>li {
-  width: 300px;
+  width: 180px;
   height: 30px;
-  display: inline-block;
+  /* display: inline-block; */
   margin-top: 40px;
   position: relative;
   box-sizing: border-box;
@@ -113,17 +121,13 @@ ul#menulist>li:hover .sub {
 
 }
 
-.lazy{
-  /* width: 1900px;
-  height: 800px;
-  margin: 0 auto; */
-}
 
 
 /* menulist 호버시 보여질 하단 메뉴 */
 
 .sub {
-  font-family: 'Roboto', sans-serif background-color: black;
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
   display: none;
   position: absolute;
 }
