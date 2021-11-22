@@ -1,93 +1,102 @@
 
+
 header {
-
-}
-
-header .menu .nav>ul>li>a {
-  text-decoration: none;
-  color: black;
-}
-
-.menu {
-  margin: 0 auto;
-  font-family: 'Noto Sans KR', sans-serif;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   max-width: 1920px;
-  padding: 0 510px;
-  left: calc(50% - 960px);
-  height: 100px;
-  box-sizing: border-box;
-  background: white;
+  margin: 0 auto;
   display: flex;
-  position: fixed;
-  z-index: 3;
-}
-
-.logo {
-  flex: 2;
-
+  align-items: center;
+  height: 100px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: cornflowerblue;
 
 }
+
+header .logo {
+  display: flex;
+  flex-grow: 1;
+  text-align: center;
+  justify-content: center;
+  background: chartreuse;
+}
+
 
 header .nav {
-
-  flex: 8;
-  max-width: 1000px;
-  /* background: white; */
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  background: chocolate;
 }
 
 header .nav > ul {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
   font-weight: 700;
-  text-align: center;
 }
 
-header .nav > ul > li{
-  min-width: 15%;
-  margin-left: 38px;
-  text-align: center;
+header .nav > ul > li > a {
+  font-size: 20px;
+  font-weight: 900;
+  text-decoration: none;
+  color: black;
+  
 }
 
 
-
-.bg {
-  max-width: 1920px;
-  margin: 0 auto;
-  position: relative;
-}
 
 .bg .main {
   max-width: 1920px;
-  position: fixed;
-  z-index: -1;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
   margin: 0 auto;
+}
+
+.slider{
+  width: 1920px;
   overflow: hidden;
 }
 
-.slider {
-  margin: 0 auto;
+.slider div > img{
+  max-width: 100%;
+}
+
+.bx-wrapper {
+  max-width: 1920px;
+
+}
+
+.bxslider {
+  max-width: 1920px;
+  padding: 0;
+  position: fixed;
+
 }
 
 
-.content {
+.bx-controls{
+  display: none;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   margin: 0 auto;
   max-width: 1920px;
-  background: white;
-  position: absolute;
-  top: 1000px;
-  height: 3460px;
+  background: black;
+
   text-align: center;
 }
 
-.text {
+.content .text{
+  background: chocolate;
   height: 380px;
-  display: block;
 }
 
-.text>h3 {
+.text > h3 {
   text-align: center;
   color: #000;
   font-size: 60px;
@@ -96,7 +105,7 @@ header .nav > ul > li{
   margin: 50px 0;
 }
 
-.text>P {
+.text > P {
   font-size: 25px;
   line-height: 40px;
 }
@@ -105,47 +114,45 @@ header .nav > ul > li{
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  /* gap: %; */
-  max-width: 79.17%;
+  gap: 2rem;
+
 }
 
-.item {
+.flexbox .item {
   margin: 0 auto;
-  min-height: 150px;
   flex-basis: 23.3%;
   flex-shrink: 1;
   flex-grow: 1;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
-/* .item:nth-child(1){
-      background: orange;
-    }
-    .item:nth-child(2){
-      background: red;
-    }
-    .item:nth-child(3){
-      background: green;
-    }
-    .item:nth-child(4){
-      background: blue;
-    } */
+
+
+
+
 
 .bener {
-  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+.bener > img{
+  max-width: 100%;
 }
 
-.flexbox>* {
-  /* flex-grow: 0; */
-}
 
 .content2 {
   max-width: 1920px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 
-.content>h3 {
+.content2 > h3 {
   text-align: center;
   color: #000;
   font-size: 60px;
@@ -157,15 +164,24 @@ header .nav > ul > li{
 .content2 .item {
   margin: 0 auto;
   display: flex;
-  max-width: 79.17%;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+.content2 .item .img{
+  margin: 0 auto;
+}
+.content2 .item .img img {
 }
 
 .content2 .item .text {
-  max-width: 50%;
-  padding: 30px;
+  padding: 30px 0;
   box-sizing: border-box;
   text-align: left;
-  background: white;
+  background: red;
+  margin: 0 auto;
+
+  
 }
 
 .content2 .item .text>p:nth-child(1) {
@@ -183,10 +199,7 @@ header .nav > ul > li{
   color: blue;
 }
 
-.content2 .img {
-  width: 50%;
-  height: 100%;
-}
+
 
 footer {
   margin: 0 auto;
@@ -199,7 +212,7 @@ footer {
   justify-content: space-between;
 }
 
-footer>div>h1>a {
+footer > div > h1 > a {
   color: black;
   text-decoration: none;
 }
@@ -209,13 +222,13 @@ footer>div>p>a {
   text-decoration: none;
 }
 
-footer>div>h1 {
+footer > div > h1 {
   font-size: 20px;
   font-weight: 700;
   padding-bottom: 10%;
 }
 
-footer>div>p {
+footer > div > p {
   font-size: 15px;
   line-height: 160%;
 }
@@ -224,468 +237,11 @@ footer>div>p {
 /* 태블릿 */
 @media screen and (min-width:768px) and (max-width:1024px) {
 
-  header {
 
-  }
-  
-  header .menu .nav>ul>li>a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .menu {
-    margin: 0 auto;
-    font-family: 'Noto Sans KR', sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    max-width: 1920px;
-    padding: 0 510px;
-    left: calc(50% - 960px);
-    height: 100px;
-    box-sizing: border-box;
-    background: white;
-    display: flex;
-    position: fixed;
-    z-index: 3;
-  }
-  
-  .logo {
-    flex: 2;
-  
-  
-  }
-  
-  header .nav {
-  
-    flex: 8;
-    max-width: 1000px;
-    /* background: white; */
-  }
-  
-  header .nav > ul {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    text-align: center;
-  }
-  
-  header .nav > ul > li{
-    min-width: 15%;
-    margin-left: 38px;
-    text-align: center;
-  }
-  
-  
-  
-  .bg {
-    max-width: 1920px;
-    margin: 0 auto;
-    position: relative;
-  }
-  
-  .bg .main {
-    max-width: 1920px;
-    position: fixed;
-    z-index: -1;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  
-  .slider {
-    margin: 0 auto;
-  }
-  
-  
-  
-  .bx-controls-auto-item {
-    display: none;
-  }
-  
-  .content {
-    margin: 0 auto;
-    max-width: 1920px;
-    background: white;
-    position: absolute;
-    top: 1000px;
-    height: 3460px;
-    text-align: center;
-  }
-  
-  .text {
-    height: 380px;
-    display: block;
-  }
-  
-  .text>h3 {
-    text-align: center;
-    color: #000;
-    font-size: 60px;
-    letter-spacing: 0.5px;
-    font-weight: 500;
-    margin: 50px 0;
-  }
-  
-  .text>P {
-    font-size: 25px;
-    line-height: 40px;
-  }
-  
-  .flexbox {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    /* gap: %; */
-    max-width: 79.17%;
-  }
-  
-  .item {
-    margin: 0 auto;
-    min-height: 150px;
-    flex-basis: 23.3%;
-    flex-shrink: 1;
-    flex-grow: 1;
-  }
-  
-  /* .item:nth-child(1){
-        background: orange;
-      }
-      .item:nth-child(2){
-        background: red;
-      }
-      .item:nth-child(3){
-        background: green;
-      }
-      .item:nth-child(4){
-        background: blue;
-      } */
-  
-  .bener {
-    margin-top: 50px;
-  }
-  
-  .flexbox>* {
-    /* flex-grow: 0; */
-  }
-  
-  .content2 {
-    max-width: 1920px;
-    display: flex;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-  }
-  
-  .content>h3 {
-    text-align: center;
-    color: #000;
-    font-size: 60px;
-    letter-spacing: 0.5px;
-    font-weight: 500;
-    margin: 50px 0;
-  }
-  
-  .content2 .item {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 79.17%;
-  }
-  
-  .content2 .item .text {
-    max-width: 50%;
-    padding: 30px;
-    box-sizing: border-box;
-    text-align: left;
-    background: white;
-  }
-  
-  .content2 .item .text>p:nth-child(1) {
-    color: red;
-  }
-  
-  .content2 .item .text>p:nth-child(2) {
-    font-size: 30px;
-    margin: 10px 0;
-    font-weight: 700;
-  }
-  
-  .content2 .item .text>p>a {
-    text-decoration: none;
-    color: blue;
-  }
-  
-  .content2 .img {
-    width: 50%;
-    height: 100%;
-  }
-  
-  footer {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 2%;
-    box-sizing: border-box;
-    background: white;
-    display: flex;
-    text-align: left;
-    justify-content: space-between;
-  }
-  
-  footer>div>h1>a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  footer>div>p>a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  footer>div>h1 {
-    font-size: 20px;
-    font-weight: 700;
-    padding-bottom: 10%;
-  }
-  
-  footer>div>p {
-    font-size: 15px;
-    line-height: 160%;
-  }
-  
 }
 
 /* 폰 */
 @media screen and (max-width:767px) {
-  header {
-
-  }
-  
-  header .menu .nav>ul>li>a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .menu {
-    margin: 0 auto;
-    font-family: 'Noto Sans KR', sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    max-width: 1920px;
-    padding: 0 510px;
-    left: calc(50% - 960px);
-    height: 100px;
-    box-sizing: border-box;
-    background: white;
-    display: flex;
-    position: fixed;
-    z-index: 3;
-  }
-  
-  .logo {
-    margin: 0 auto;
-  
-  }
-  
-  header .nav {
-  
-    flex: 8;
-    max-width: 1000px;
-    /* background: white; */
-  }
-  
-  header .nav > ul {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    text-align: center;
-  }
-  
-  header .nav > ul > li{
-    min-width: 18%;
-    margin-left: 38px;
-    text-align: center;
-  }
-  
-  
-  
-  .bg {
-    max-width: 1920px;
-    margin: 0 auto;
-    position: relative;
-  }
-  
-  .bg .main {
-    max-width: 1920px;
-    position: fixed;
-    z-index: -1;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  
-  .slider {
-    margin: 0 auto;
-  }
-  
-  
-  .bx-controls-auto-item {
-    display: none;
-  }
-  
-  .content {
-    margin: 0 auto;
-    max-width: 1920px;
-    background: white;
-    position: absolute;
-    top: 1000px;
-    height: auto;
-    text-align: center;
-  }
-  
-  .text {
-    margin: 0 auto;
-    height: 380px;
-    display: block;
-  }
-  
-  .text>h3 {
-    text-align: center;
-    color: #000;
-    font-size: 80px;
-    letter-spacing: 0.5px;
-    font-weight: 700;
-    margin: 50px 0;
-  }
-  
-  .text>P {
-    font-size: 40px;
-    line-height: 60px;
-    font-weight: 400;
-  }
-  
-  .flexbox {
-    display: flex;
-    flex-wrap: wrap;
-    /* gap: %; */
-    max-width: 79.17%;
-  }
-  
-  .flexbox .item {
-    flex-basis: 100%;
-    margin: 0 auto;
-    flex-grow: 1;
-    
-  }
-  
-  .flexbox .item >img{
-    width: 100%;
-    margin-bottom: 100px;
-  }
-  
-  .bener {
-    margin-top: 50px;
-  }
-  
-  .content2 {
-    max-width: 1920px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .content>h3 {
-    text-align: center;
-    color: #000;
-    font-size: 60px;
-    letter-spacing: 0.5px;
-    font-weight: 500;
-    margin: 50px 0;
-  }
-  
-  .content2 .item {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    max-width: 79.17%;
-    flex-grow: 1;
-    flex-basis: 50%;
-    
-  }
-
-  .content2 .item:nth-child(2),
-  .content2 .item:nth-child(4) {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-    max-width: 79.17%;
-    flex-grow: 1;
-    flex-basis: 50%;
-  }
-  
-  .content2 .item .text {
-    max-width: 100%;
-    padding: 30px;
-    box-sizing: border-box;
-    text-align: left;
-    background: white;
-    display:  inline-block;
-    margin: 0;
-  }
-  
-  .content2 .item .text>p:nth-child(1) {
-    color: red;
-    font-weight: 700;
-  }
-  
-  .content2 .item .text>p:nth-child(2) {
-    font-size: 60px;
-    margin: 30px 0;
-    font-weight: 700;
-  }
-  
-  .content2 .item .text>p>a {
-    text-decoration: none;
-    margin: 20px 0;
-    color: blue;
-
-  }
-  
-  .content2 .item .img > img{
-    margin: 0 auto;
-    width: 1400px;
-    
-  }
-  
-  footer {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 2%;
-    box-sizing: border-box;
-    background: white;
-    display: flex;
-    text-align: left;
-    justify-content: space-between;
-  }
-  
-  footer>div>h1>a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  footer>div>p>a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  footer>div>h1 {
-    font-size: 20px;
-    font-weight: 700;
-    padding-bottom: 10%;
-  }
-  
-  footer>div>p {
-    font-size: 15px;
-    line-height: 160%;
-  }
-   
+ 
 }
+
