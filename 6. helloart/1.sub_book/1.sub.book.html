@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="./css/1.sub.book.css">
   <title>HELLO ART_BOOK</title>
+
+         <!-- top btn -->
+         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+         <!-- 파비콘 -->
+         <link rel="shortcut icon" href="../img/art_favicon.png">
+         <link rel="icon" href="../img/art_favicon.png">
 </head>
 
 <body>
@@ -29,7 +36,7 @@
     <!-- nav -->
     <div class="nav inner">
       <div class="logo">
-        HELLO ART
+        <a href="../helloart_main.html">HELLO ART</a>
       </div>
 
       <div class="navbar">
@@ -256,7 +263,24 @@
 
   </footer>
 
+  <!-- top -->
+  <div id="top"> <img src="../img/art_topbtn.png" alt=""></div>
 
 </body>
+<script>
+  $(window).scroll(function () {
+    var pos = $(window).scrollTop();
+    if (pos >= 500) {
+      $("#top").css("opacity", '1');
+    } else {
+      $("#top").css("opacity", '0');
+    }
+  })
+  $("#top").click(function () {
+    $("html, body").stop().animate({
+      scrollTop: 0
+    }, 1000);
+  })
+</script>
 
 </html>

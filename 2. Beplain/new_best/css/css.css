@@ -1,0 +1,262 @@
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/design/cosrx/phps/fonts/NotoSansKR-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'GmarketSansBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* font-family: 'Roboto', sans-serif */
+a {
+  text-decoration: none;
+
+}
+
+.wrap {
+  width: 1900px;
+  margin: 0 auto;
+
+}
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* top_menu */
+.top_menu {
+  background-color: black;
+  color: white;
+  height: 42px;
+  line-height: 40px;
+}
+
+.top_menu ul {
+  list-style: none;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top_menu ul li a {
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+}
+
+/* nav */
+.nav {
+  height: 100px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav>ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* line-height: 80px; */
+  font-size: 18px;
+  font-weight: bolder;
+
+}
+
+.nav>ul>li::after {
+  display: inline-block;
+  content: "";
+  width: 1%;
+  height: 2px;
+  background-color: white;
+  transition: .1s;
+  transform: translateY(-6px);
+}
+
+.nav>ul>li:hover::after {
+  width: 100%;
+  background-color: black;
+}
+
+.nav>ul li:nth-child(4) img {
+
+  padding-top: 10px;
+
+}
+
+.nav>ul>li>a {
+  text-decoration: none;
+  color: black;
+}
+.container {
+  height: 1800px;
+}
+
+
+.container .title{
+  height: 70px;
+}
+
+.container .title > p{
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #a7a6a6;
+}
+
+.container .title > p > span{
+  color: black;
+}
+
+.container .title > p:nth-child(2){
+  text-align: end;
+  color: black;
+}
+.container .itemwrap {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.container .itemwrap .item{
+  /* position: relative; */
+}
+
+
+.container .itemwrap .item .icon{
+margin-left: 80px;
+margin-bottom: 20px;
+}
+
+.container .itemwrap .item .icon > a> img{
+  margin-right: 30px;
+}
+
+.container .itemwrap .item .text > a{
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.container .itemwrap .item .text > a:hover{
+  text-decoration: underline;
+}
+
+.pagenumber{
+  height: 150px;
+  padding-top: 100px;
+  align-items: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+.pagenumber > ul{
+  display: flex;
+  justify-content: center;
+}
+
+
+.pagenumber > ul > li{
+  width: 50px;
+  text-align: center;
+}
+
+.pagenumber > ul > li:hover{
+  border: 1px solid #a7a6a6;
+  border-radius: 50px 50px;
+  box-sizing: border-box;
+}
+
+.pagenumber > ul > li > a{
+  text-decoration: none;
+  color: black;
+}
+
+
+/* footer */
+.fc {
+  height: 294px;
+  border-top: 1px solid #a7a6a6;
+  border-bottom: 1px solid #a7a6a6;
+
+}
+
+.fc .fc_bg {
+  display: flex;
+  justify-content: space-between;
+  padding: 48px;
+}
+
+.fc .fc_bg .fc1 a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+
+.fc .fc_bg .fc1 p {
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.fc .fc_bg .fc1 p:nth-child(1) {
+  font-size: 18px;
+}
+
+.fc .fc_bg .fc1 p:nth-child(1) {
+  font-weight: bolder;
+}
+
+.fc .fc_bg .fc1>img {
+  width: 25px;
+  height: 25px;
+}
+
+.footer_last {
+  width: 1200px;
+  height: 159px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 48px;
+}
+
+.fc1:nth-child(2) a {
+  border: 1px solid gray;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: 900;
+}
+
+.fc1:nth-child(2) a:hover {
+  background-color: dimgray;
+  color: white;
+}
+
+.fc1:nth-child(3) a {
+  border: 1px solid gray;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: 900;
+}
+
+.fc1:nth-child(3) a:hover {
+  background-color: dimgray;
+  color: white;
+}
+
+#top {
+  position: fixed;
+  right: 100px;
+  bottom: 300px;
+  opacity: 0;
+  transition: opacity 300ms;
+  cursor: pointer;
+  text-align: center;
+  z-index: 9;
+}

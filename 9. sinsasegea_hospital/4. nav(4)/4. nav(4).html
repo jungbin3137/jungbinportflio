@@ -9,28 +9,18 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <!-- top btn -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="../image/sinseagae_top.png">
+    <link rel="icon" href="../image/sinseagea_favicon.png">
+  
   <title>신세계병원</title>
 
 
-  <!-- top버튼 -->
-  <script>
-    $(function () {
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 400) {
-          $('#MOVE_TOP_BTN').fadeIn();
-        } else {
-          $('#MOVE_TOP_BTN').fadeOut();
-        }
-      });
 
-      $("#MOVE_TOP_BTN").click(function () {
-        $('html, body').animate({
-          scrollTop: 0
-        }, 400);
-        return false;
-      });
-    });
-  </script>
 
 </head>
 <script>
@@ -44,18 +34,6 @@
     })
   });
 </script>
-<style>
-  a#MOVE_TOP_BTN {
-    position: fixed;
-    right: 100px;
-    bottom: 100px;
-    display: none;
-    z-index: 10;
-  }
-</style>
-
-
-<!-- TOP BTN[E] -->
 
 <body>
 
@@ -176,13 +154,6 @@
 
   </div>
 
-  <!-- TOP BTN[S] -->
-  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
-
-  <a id="MOVE_TOP_BTN" href="#">
-    <img src="../image/topbutton.png" alt="">
-  </a>
-
 
 
 
@@ -232,6 +203,25 @@
      },
    });
  </script>
+
+  <!-- top -->
+  <div id="top"> <img src="../image/sinseagae_top.png" alt=""></div>
+
 </body>
+<script>
+  $(window).scroll(function () {
+    var pos = $(window).scrollTop();
+    if (pos >= 500) {
+      $("#top").css("opacity", '1');
+    } else {
+      $("#top").css("opacity", '0');
+    }
+  })
+  $("#top").click(function () {
+    $("html, body").stop().animate({
+      scrollTop: 0
+    }, 1000);
+  })
+</script>
 
 </html>

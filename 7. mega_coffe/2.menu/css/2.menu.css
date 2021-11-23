@@ -342,3 +342,14 @@ footer a {
   color: rgb(173, 173, 173);
   font-weight: 900;
 }
+
+#top {
+  position: fixed;
+  right: 100px;
+  bottom: 300px;
+  opacity: 0;
+  transition: opacity 300ms;
+  cursor: pointer;
+  text-align: center;
+  z-index: 9;
+}

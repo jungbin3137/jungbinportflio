@@ -14,6 +14,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+           <!-- top btn -->
+         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+         <!-- 파비콘 -->
+         <link rel="shortcut icon" href="../image/mega_favicon.png">
+         <link rel="icon" href="../image/mega_favicon.png">
 </head>
 
 <body>
@@ -241,6 +248,24 @@
       </div>
     </footer>
 
+  <!-- top -->
+  <div id="top"> <img src="../image/mega_top.png" alt=""></div>
+
 </body>
+<script>
+  $(window).scroll(function () {
+    var pos = $(window).scrollTop();
+    if (pos >= 500) {
+      $("#top").css("opacity", '1');
+    } else {
+      $("#top").css("opacity", '0');
+    }
+  })
+  $("#top").click(function () {
+    $("html, body").stop().animate({
+      scrollTop: 0
+    }, 1000);
+  })
+</script>
 
 </html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beplain</title>
+  <link rel="stylesheet" href="./css/event.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="../img/beplain_favicon.png">
+  <link rel="icon" href="../img/beplain_favicon.png">
+
+</head>
+
+<body>
+
+  <!-- topmenu -->
+
+  <div class="top_menu wrap">
+    <ul>
+      <li><a href="javascript:void(0)">회원가입</a></li>
+      <li><a href="javascript:void(0)">로그인</a></li>
+      <li><a href="javascript:void(0)">장바구니</a></li>
+      <li><a href="javascript:void(0)">마이페이지</a></li>
+      <li><a href="javascript:void(0)">주문완료</a></li>
+    </ul>
+  </div>
+
+  <!-- nav -->
+  <div class="nav inner">
+    <ul>
+      <li>
+        <a href="../new_best/new_best.html">NEW&BEST</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">SHOP</a>
+      </li>
+      <li>
+        <a href="./event.html">EVENT</a>
+      </li>
+      <li>
+        <a href="../beplain.html">
+          <img src="../img/beplain_logo.png" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">ABOUT US</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">STORES</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">CS CENTER</a>
+      </li>
+    </ul>
+  </div>
+  <div class="container inner">
+    <div class="title">
+      <p>HOME > <span>EVENT</span></p>
+      <p>목록보기 > 최근순 > </p>
+    </div>
+    <div class="item">
+      <img src="./img/event.png" alt="">
+    </div>
+
+
+  </div>
+
+  <div class="pagenumber">
+    <ul>
+      <li><a href="javascript:void(0)">1</a></li>
+      <li><a href="javascript:void(0)">2</a></li>
+      <li><a href="javascript:void(0)">3</a></li>
+      <li><a href="javascript:void(0)">4</a></li>
+      <li><a href="javascript:void(0)"><img src="../new_best/img/icon_arrow_double.png" alt=""></a></li>
+    </ul>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="fc wrap">
+
+      <div class="fc_bg inner">
+        <div class="fc1">
+          <p>Customer center</p>
+          <p>1644-3228
+            OPEN TIME (10:00 ~ 17:00) <br>
+            LUNCH (12:30 ~ 14:00) <br>
+            OFF (SATURDAY, SUNDAY, <br>
+            HOLIDAY)</p>
+        </div>
+
+        <div class="fc1">
+          <p>Returns & Exchange</p>
+          <p>반품 주소 <br>
+            경기도 파주시 검산로 301-22 <br>
+            모먼츠컴퍼니 물류센터 <br><br>
+          </p>
+          <a href="javascript:void(0)">배송조회 ></a>
+        </div>
+
+        <div class="fc1">
+          <p>Bank info</p>
+          <p>우리은행 1005-703-651527 <br>
+            (주)모먼츠컴퍼니
+            <br><br>
+          </p>
+          <a href="javascript:void(0)">인터넷뱅킹 바로가기 ></a>
+        </div>
+
+
+        <div class="fc1">
+          <p>About</p>
+          <p>
+            <a href="javascript:void(0)">회사소개</a> <br>
+            <a href="javascript:void(0)">이용약관</a> <br>
+            <a href="javascript:void(0)">이용안내</a> <br>
+            <a href="javascript:void(0)">개인정보처리방침</a> <br>
+          </p>
+        </div>
+
+        <div class="fc1">
+          <p>Follow us</p>
+          <a href="javascript:void(0)"><img src="./img/icon (1).png" alt=""></a>
+          <a href="javascript:void(0)"><img src="./img/icon (2).png" alt=""></a>
+          <a href="javascript:void(0)"><img src="./img/icon (3).png" alt=""></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer_last wrap">
+      <p>
+        상호명 : 주식회사 모먼츠컴퍼니 대표 : 정윤진 주소 : 서울특별시 강남구 도산대로 145 (인우빌딩) 407호 사업자등록번호 : 842-86-01047 [사업자번호조회] <br>
+        <br>
+        통신판매업신고 : 제2018-서울마포-1985호 개인정보관리자 : 정윤진 Business : business@momentsco.com CS : contact@momentsco.com <br>
+        (c) 2020 beplain. Hosting by NHN GODO. <br>
+      </p>
+    </div>
+  </footer>
+
+  <!-- top -->
+  <div id="top"> <img src="../img/beplain_top.png" alt=""></div>
+
+
+
+</body>
+<script>
+  $(window).scroll(function () {
+    var pos = $(window).scrollTop();
+    if (pos >= 500) {
+      $("#top").css("opacity", '1');
+    } else {
+      $("#top").css("opacity", '0');
+    }
+  })
+  $("#top").click(function () {
+    $("html, body").stop().animate({
+      scrollTop: 0
+    }, 1000);
+  })
+</script>
+
+</html>
