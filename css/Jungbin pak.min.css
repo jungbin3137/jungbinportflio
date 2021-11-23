@@ -3850,10 +3850,11 @@ strong {
 .intro-card-heading {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 32px;
+  font-size: 20px;
   line-height: 1.2;
   font-weight: 600;
-  letter-spacing: -.025em
+  letter-spacing: -.025em;
+  text-align: center;
 }
 
 .intro-card-heading.intro-cell-heading--big {
