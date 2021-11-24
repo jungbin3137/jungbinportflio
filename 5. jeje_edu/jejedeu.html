@@ -16,14 +16,14 @@
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
 
-      <!-- top btn -->
-      <!-- 충돌로 스트립트 삽입안함-->
+  <!-- top btn -->
+  <!-- 충돌로 스트립트 삽입안함-->
 
-      <!-- 파비콘 -->
-      <link rel="shortcut icon" href="./image/jeje_favicon.png">
-      <link rel="icon" href="./image/jeje_favicon.png">
-    
-      
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="./image/jeje_favicon.png">
+  <link rel="icon" href="./image/jeje_favicon.png">
+
+
   <script>
     $(document).ready(function () {
       $('.slider').bxSlider({
@@ -299,7 +299,7 @@
       </div>
     </div>
 
-    <div id="tab9" class="tabcontent3"style="background: #009849;">
+    <div id="tab9" class="tabcontent3" style="background: #009849;">
       <div class="c1_item">
         <a href="javascript:void(0)"><img src="./image/item3(1).png" alt=""></a>
         <a href="javascript:void(0)"><img src="./image/item3(2).png" alt=""></a>
@@ -308,7 +308,7 @@
         <a href="javascript:void(0)"><img src="./image/item3(5).png" alt=""></a>
       </div>
     </div>
-    <div id="tab10" class="tabcontent3"style="background: #005DFF;">
+    <div id="tab10" class="tabcontent3" style="background: #005DFF;">
       <div class="c1_item">
         <a href="javascript:void(0)"><img src="./image/item4(1).png" alt=""></a>
         <a href="javascript:void(0)"><img src="./image/item4(2).png" alt=""></a>
@@ -420,6 +420,29 @@
     });
   </script>
 
+  <script>
+    $(function () {
+      $('ul.tab_1 li').click(function () {
+        var activeTab = $(this).attr('data-tab');
+        $('ul.tab_1 li').removeClass('current');
+        $('.tabcontent2').removeClass('current');
+        $(this).addClass('current');
+        $('#' + activeTab).addClass('current');
+      })
+    });
+  </script>
+
+<script>
+  $(function () {
+    $('ul.tab_2 li').click(function () {
+      var activeTab = $(this).attr('data-tab');
+      $('ul.tab_2 li').removeClass('current');
+      $('.tabcontent3').removeClass('current');
+      $(this).addClass('current');
+      $('#' + activeTab).addClass('current');
+    })
+  });
+</script>
 
   <!-- top -->
   <div id="top"> <img src="./image/jejeedu_topbtn.png" alt=""></div>
